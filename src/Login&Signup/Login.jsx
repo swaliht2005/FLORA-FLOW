@@ -66,9 +66,11 @@ const Login = () => {
           {/* Login Button */}
           <button
             type="submit"
-            className="w-full bg-green-600 text-white py-2 px-4 text-sm sm:text-base rounded-md shadow hover:bg-green-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            className="w-full bg-green-600 text-white py-2 px-4 text-sm sm:text-base rounded-md shadow hover:bg-green-700 focus:ring-2  focus:outline-none"
           >
+            <Link to={"/homePage"}>
             Login
+            </Link>
           </button>
         </form>
         <p className="mt-6 text-center text-xs sm:text-sm text-slate-200">

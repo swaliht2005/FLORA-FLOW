@@ -31,12 +31,12 @@ function StartPage() {
 
         {/* Buttons */}
         <div className="flex flex-col gap-4">
-          <Link to="/SignUp">
+          <Link to="/signUp">
             <button className="w-full max-w-xs bg-green-600 text-white text-lg sm:text-xl font-bold py-3 px-8 rounded-full shadow-lg hover:bg-green-700 transition duration-300">
               SIGN UP
             </button>
           </Link>
-          <Link to="/Login">
+          <Link to="/login">
             <button className="w-full max-w-xs bg-green-600 text-white text-lg sm:text-xl font-bold py-3 px-8 rounded-full shadow-lg hover:bg-green-700 transition duration-300">
               LOGIN
             </button>

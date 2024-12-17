@@ -214,12 +214,16 @@ const SignUp = () => {
             >
               Send OTP
             </button>
+           
             <button
-              type="submit"
               className="w-full bg-blue-600 text-white py-2 px-4 rounded-md shadow hover:bg-blue-700 focus:outline-none  focus:ring-blue-300"
+              type="submit"
             >
+             <Link to="/homePage">
               Sign Up
+              </Link>
             </button>
+         
           </div>
         </form>
         <p className="mt-4 text-center text-sm text-slate-200">
@@ -227,6 +231,7 @@ const SignUp = () => {
           <Link to="/login" className="text-blue-500 hover:text-blue-700">
             Login
           </Link>
+       
         </p>
       </div>
     </div>

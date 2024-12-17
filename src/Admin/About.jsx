@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Admin() {
+function About() {
   return (
     <div>
-      jhgk
+      hjufu
     </div>
   )
 }
 
-export default Admin
+export default About
