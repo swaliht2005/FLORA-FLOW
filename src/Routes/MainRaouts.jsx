@@ -6,6 +6,7 @@ import SignUp from '../Login&Signup/SignUP';
 import Login from '../Login&Signup/Login'; 
 import HomePage from '../Costomer/HomePage';
 import About from '../Admin/About'
+import Detailse from '../Costomer/Detailse';
 function MainRoutes() {
   return (
     <Routes>
@@ -14,6 +15,7 @@ function MainRoutes() {
       <Route path="/login" element={<Login />} />
       <Route path="/homePage"  element = {<HomePage/>} />
       <Route path="/about" element={<About/>}/>
+      <Route path='/detailse' element={<Detailse/>} />
     </Routes>
   );
 }
