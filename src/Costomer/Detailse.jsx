@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import Navebar from '../Combonents/Navebar';
-
+import { Link } from 'react-router-dom';
 function Detailse() {
   const location = useLocation();
   const { cart } = location.state || {};
@@ -32,7 +32,9 @@ function Detailse() {
     Order
   </button>
   <button className="w-[150px] text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl  focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+    <Link to={'/chating'}>
     Comment
+    </Link>
   </button>
 </div>
         </div>

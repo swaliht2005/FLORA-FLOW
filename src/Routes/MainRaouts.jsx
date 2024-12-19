@@ -7,7 +7,7 @@ import Login from '../Login&Signup/Login';
 import HomePage from '../Costomer/HomePage';
 import About from '../Admin/About'
 import Detailse from '../Costomer/Detailse';
-import Chationg from '../Costomer/Chationg';
+import Chating from '../Costomer/Chating';
 function MainRoutes() {
   return (
     <Routes>
@@ -17,7 +17,7 @@ function MainRoutes() {
       <Route path="/homePage"  element = {<HomePage/>} />
       <Route path="/about" element={<About/>}/>
       <Route path='/detailse' element={<Detailse/>} />
-      <Route path='/chating' element={<Chationg/>}/>
+      <Route path='/chating' element={<Chating/>}/>
     </Routes>
   );
 }
