@@ -3,7 +3,7 @@ import Navebar from '../Combonents/Navebar';
 import Bananatree from '../Costomer/costomerimgs/Bananatree.png'; 
 import Footer from '../Combonents/Footer';
 import { Link } from 'react-router-dom';
-import Detailse from './Detailse';
+
 function HomePage() {
   const carts = [
     {
