@@ -8,6 +8,7 @@ import HomePage from '../Costomer/HomePage';
 import About from '../Admin/About'
 import Detailse from '../Costomer/Detailse';
 import Chating from '../Costomer/Chating';
+import Profile from '../Costomer/Profile';
 function MainRoutes() {
   return (
     <Routes>
@@ -18,6 +19,7 @@ function MainRoutes() {
       <Route path="/about" element={<About/>}/>
       <Route path='/detailse' element={<Detailse/>} />
       <Route path='/chating' element={<Chating/>}/>
+      <Route path='/profile' element={<Profile/>}/>
     </Routes>
   );
 }

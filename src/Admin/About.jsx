@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 function About() {
   return (
-    <div>
-      hjufu
+    <div className="h--full w-full flex items-center justify-center bg-gray-50">
+      hih
     </div>
-  )
+  );
 }
 
-export default About
+export default About;
