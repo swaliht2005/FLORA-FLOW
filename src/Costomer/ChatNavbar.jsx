@@ -1,5 +1,5 @@
 import React from "react";
-import Profileicon from "../assets/profileicon.png";
+import Profileicon from "../assets/images/profileicon.png";
 
 function ChatNavbar() {
   return (

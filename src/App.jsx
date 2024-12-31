@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import MainRoutes from './Routes/MainRaouts';
+import CommonRaouts from './Routes/CommonRaouts';
 
 
 function App() {
   return (
     <BrowserRouter>
-      <MainRoutes />
+      <CommonRaouts />
     </BrowserRouter>
   );
 }

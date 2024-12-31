@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Startimg from '/src/assets/Startimg.png';
+import Startimg from '../assets/images/Startimg.png';
 
-function StartPage() {
+function LandingPage() {
   const [opacityClass, setOpacityClass] = useState('opacity-50');
 
   useEffect(() => {
@@ -47,4 +47,4 @@ function StartPage() {
   );
 }
 
-export default StartPage;
+export default LandingPage;

@@ -1,5 +1,5 @@
 import React, { useReducer } from 'react';
-import Profileicon from '/src/assets/Profileicon.png';
+import Profileicon from '../assets/images/profileicon.png'
 import Navbar from '../Combonents/Navebar';
 
 function Profile() {

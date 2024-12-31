@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Loginsignupimg from "/src/assets/Loginsignupimg.png";
+import Loginsignupimg from "../assets/images/Loginsignupimg.png";
 
 const SignUp = () => {
   const [formData, setFormData] = useState({

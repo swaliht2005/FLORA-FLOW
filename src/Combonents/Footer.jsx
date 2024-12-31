@@ -1,6 +1,6 @@
 import React, { useReducer, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Combonentsimgs from '../Combonents/Combonentsimgs/add.png';
+import Combonentsimgs from '../assets/images/add.png';
 import Useredeuser from './Useredeuser';
 
 function Footer() {

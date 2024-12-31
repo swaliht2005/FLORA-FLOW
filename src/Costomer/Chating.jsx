@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import smile from "../Costomer/costomerimgs/smile.png";
-import camera from "../Costomer/costomerimgs/camera.png";
+import smile from "../assets/images/smile.png";
+import camera from "../assets/images/camera.png";
 import ChatNavbar from "../Costomer/ChatNavbar";
 
 function Chating() {

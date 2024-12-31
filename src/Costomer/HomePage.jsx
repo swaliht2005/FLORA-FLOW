@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Navebar from '../Combonents/Navebar';
-import Bananatree from '../Costomer/costomerimgs/Bananatree.png'; 
+import Bananatree from '../assets/images/Bananatree.png'; 
 import Footer from '../Combonents/Footer';
 import { Link } from 'react-router-dom';
-
+import Faverate from '../assets/images/favorites.png'
+// import Homeimages from '../assets/images/homeimages.png'
 function HomePage() {
   const carts = [
     {
@@ -90,12 +91,24 @@ function HomePage() {
     <div className="h-[100px] w-full">
       <Navebar />
     </div>
+<div className="h-1000px w-full  flex justify-center items-center ">
+  {/* <img src={Homeimages} alt=""  className='fixed top-11 bottom-6'/> */}
+</div>
+
 
     {/* Cards Section */}
     <div className="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
       {carts.map((cart) => (
         <Link to={`/detailse`} key={cart.id} state={{ cart }}>
-          <div className="h-[450px] w-[350px] bg-white p-4 rounded shadow hover:shadow-lg transition flex flex-col justify-between">
+          <div className="h-[460px] w-[350px] bg-white p-4 rounded shadow hover:shadow-lg transition flex flex-col justify-between">
+    <button
+     className='h-6 w-6'
+    >
+      <Link to={'/faverate'}>
+     <img src={Faverate} alt="" />
+     </Link>
+    </button>
+ 
             <div className="flex items-center flex-col">
               <img
                 src={cart.url}

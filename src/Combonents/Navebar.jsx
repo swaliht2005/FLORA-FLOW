@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import FloraflowLogo from '/src/assets/FloraflowLogo.png';
-import Profileicon from '/src/assets/Profileicon.png';
-import Navebarinput from '/src/assets/Navebarinput.png';
+import FloraflowLogo from '../assets/images/FloraflowLogo.png';
+import Profileicon from '../assets/images/profileicon.png';
+import Navebarinput from '../assets/images/Navebarinput.png';
 import { Link } from 'react-router-dom';
 import Useredeuser from './Useredeuser';
 
@@ -51,6 +51,9 @@ function Navebar() {
           </h3>
           <h3 className="text-sm lg:text-lg font-medium text-white hover:underline cursor-pointer">
             <Link to="/about">About</Link>
+          </h3>
+          <h3 className="text-sm lg:text-lg font-medium text-white hover:underline cursor-pointer">
+            <Link to="/favorite">Favorite</Link>
           </h3>
           <select
             name="languages"
@@ -104,12 +107,19 @@ function Navebar() {
           >
             About
           </Link>
+          <Link
+            to="/favorite"
+            className="text-white px-4 py-2 hover:bg-green-700"
+          >
+           favorite
+          </Link>
           <select
             name="languages"
             id="mobile-language-selector"
             className="text-white px-4 py-2 bg-green-800 hover:bg-green-700"
             onChange={(e) => console.log(e.target.value)}
           >
+
             <option value="" disabled>
               Select Language
             </option>
