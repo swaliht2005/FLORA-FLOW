@@ -18,11 +18,11 @@ function Navebar() {
   };
 
   return (
-    <div className="h-auto w-full bg-green-800 shadow-md fixed z-20 overflow-hidden">
+    <div className="h-auto w-full bg-green-800 shadow-md fixed z-20 ">
       <Useredeuser />
 
       {/* Navbar Container */}
-      <div className="h-[80px] w-full flex items-center justify-between px-4 lg:px-8 overflow-hidden">
+      <div className="h-[100px] w-full flex items-center justify-between px-4 lg:px-8 overflow-hidden">
         {/* Left Section */}
         <div className="flex items-center">
           <img
