@@ -11,7 +11,7 @@ const HomeBanner = () => {
         backgroundImage: `url(${Homeimages})`,
         backgroundAttachment: "fixed",
         backgroundSize:"contain",
-        // backgroundRepeat:"no-repeat"
+       
       }}
     >
       <div>
