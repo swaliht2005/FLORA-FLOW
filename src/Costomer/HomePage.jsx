@@ -4,90 +4,92 @@ import Bananatree from '../assets/images/Bananatree.png';
 import Footer from '../Combonents/Footer';
 import { Link } from 'react-router-dom';
 import Faverate from '../assets/images/favorites.png'
+import Pukspuu from '../assets/images/Pukspuu.jpg'
+import bonsai from '../assets/images/bonsai.png'
 import HomeBanner from './HomeBanner';
 import Album from './Album';
 function HomePage() {
   const carts = [
     {
-      id: 1, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",
+      id: 1, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",price: "200",
     },
     {
-      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/17/24", Height: "10cm",
+      id: 2, url: Pukspuu, PlantName: "Pukspuu", plantingDay: "12/17/24", Height: "10cm",price: "200",
     },
     {
-      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/18/24", Height: "10cm",
+      id: 2, url: bonsai, PlantName: "bonsai", plantingDay: "12/18/24", Height: "10cm",price: "200",
     },
     {
-      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/19/24", Height: "10cm",
+      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/19/24", Height: "10cm",price: "200",
     },
     {
-      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/20/24", Height: "10cm",
+      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/20/24", Height: "10cm",price: "200",
     },
     {
-      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/21/24", Height: "10cm",
+      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/21/24", Height: "10cm",price: "200",
     },
     {
-      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/22/24", Height: "10cm",
+      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/22/24", Height: "10cm",price: "200",
     },
     {
-      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/23/24", Height: "10cm",
+      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/23/24", Height: "10cm",price: "200",
     },
     {
-      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/24/24", Height: "10cm",
+      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/24/24", Height: "10cm",price: "200",
     },
     {
-      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/25/24", Height: "10cm",
+      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/25/24", Height: "10cm",price: "200",
     },
     {
-      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/26/24", Height: "10cm",
+      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/26/24", Height: "10cm",price: "200",
     },
     {
-      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/27/24", Height: "10cm",
+      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/27/24", Height: "10cm",price: "200",
     },
     {
-      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/28/24", Height: "10cm",
+      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/28/24", Height: "10cm",price: "200",
     },
     {
-      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/29/24", Height: "10cm",
+      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/29/24", Height: "10cm",price: "200",
     },
     {
-      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/30/24", Height: "10cm",
+      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/30/24", Height: "10cm",price: "200",
     },
     {
-      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",
-    },
-
-    {
-      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",
-    },
-    {
-      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",
+      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",price: "200",
     },
 
     {
-      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",
+      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",price: "200",
     },
     {
-      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",
+      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",price: "200",
+    },
+
+    {
+      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",price: "200",
     },
     {
-      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",
+      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",price: "200",
     },
     {
-      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",
+      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",price: "200",
     },
     {
-      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",
+      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",price: "200",
     },
     {
-      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",
+      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",price: "200",
+    },
+    {
+      id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",price: "200",
     },
     
   ];
  
 
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="bg-gray-100 min-h-screen overflow-hidden">
     {/* Navbar */}
     <div className="h-[100px] w-full">
       <Navebar />
@@ -117,6 +119,7 @@ function HomePage() {
         <div className="relative left-[10px] bottom-[5px]">
           <h2 className="text-gray-600">Planting Day: {cart.plantingDay}</h2>
           <h2 className="text-gray-600">Height: {cart.Height}</h2>
+          <h1><b className='text-green-600'>₹ {cart.price} </b></h1>
         </div>
       </div>
     </Link>
