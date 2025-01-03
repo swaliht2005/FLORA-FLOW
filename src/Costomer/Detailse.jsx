@@ -116,79 +116,68 @@ function Detailse() {
       <Navebar />
 
       {/* Product Card */}
-      <div className="flex items-center justify-center mt-20 px-4 lg:mt-12">
+      <div className="flex items-center justify-center mt-8 px-4 lg:mt-12 lg:py-14 overflow-hidden">
         {cart ? (
-          <div className="w-full max-w-9xl bg-white rounded-lg shadow-md p-6 lg:p-12 flex flex-col lg:flex-row items-center ">
+          <div className="w-full max-w-4xl bg-white rounded-lg shadow-md p-6 lg:p-12 flex flex-wrap lg:flex-nowrap items-center gap-8 sm:pb-16 mt-20 sm:mt-0">
             {/* Image Section */}
-            <div className="w-full lg:w-1/2 relative top-10 flex justify-center">
+            <div className="w-full lg:w-1/2 flex flex-col items-center">
               <img
                 src={cart.url}
-                alt={cart.PlantName}
-                className="rounded h-auto max-w-full lg:max-w-md object-cover shadow-sm"
+                alt={cart.PlantName || "Plant Image"}
+                className="rounded h-auto max-w-full lg:max-w-md object-cover shadow-sm  sm:pb-0"
               />
+              <Link to={'/homePagecarts'}>
+              <button
+                type="button"
+                className="mt-4 text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center w-full sm:w-auto"
+              >
+                SHOP MORE
+              </button>
+              </Link>
             </div>
 
             {/* Details Section */}
-            <div className="w-full lg:w-1/2 lg:ml-12 mt-6 lg:mt-0 text-center lg:text-left">
+            <div className="w-full lg:w-1/2 text-center lg:text-left">
               <h1 className="font-semibold text-2xl sm:text-3xl lg:text-4xl text-gray-800">
-                {cart.PlantName}
+                {cart.PlantName || "Unknown Plant"}
               </h1>
-             
-              <p className="text-gray-600 mt-6 lg:mt-4">Planting Day: {cart.plantingDay}</p>
-              <p className="text-gray-600 mt-2">Height: {cart.Height}</p>
+              <p className="text-gray-600 mt-4">
+                Planting Day: {cart.plantingDay || "N/A"}
+              </p>
+              <p className="text-gray-600 mt-2">Height: {cart.Height || "Unknown"}</p>
               {cart.price && (
                 <p className="text-xl lg:text-2xl font-bold text-green-600 mt-4">
                   ₹{cart.price}
                 </p>
               )}
-              <Link
-                to="/homePagecarts"
-                className="block mt-6 relative left-[500px] bottom-[135px] inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 rounded-full shadow-md group"
-              >
-                <span className="absolute   inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-purple-500 group-hover:translate-x-0 ease">
-                  <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    ></path>
-                  </svg>
-                </span>
-                <span className="absolute  flex items-center justify-center w-full h-full text-purple-500 transition-all duration-300 transform group-hover:translate-x-full ease">
-                  SHOP MORE
-                </span>
-                <span className="relative invisible">Shop More</span>
-              </Link>
 
               {/* Actions */}
-              <div className="flex flex-col sm:flex-row sm:items-center gap-6 mt-8 lg:mt-12">
+              <div className="flex flex-col gap-6 mt-8">
+                {/* Quantity Selector */}
                 <div className="flex justify-center sm:justify-start items-center gap-4">
                   <button
                     onClick={decrement}
                     className="bg-green-500 hover:bg-white text-white hover:text-black hover:border-green-500 hover:border-2 font-semibold py-2 px-4 rounded transition duration-400 ease-in-out"
+                    aria-label="Decrease quantity"
                   >
                     -
                   </button>
-                  <label htmlFor="" className="text-lg">
+                  <label htmlFor="quantity" className="text-lg">
                     {count}
                   </label>
                   <button
                     onClick={increment}
                     className="bg-green-500 hover:bg-white text-white hover:text-black hover:border-green-500 hover:border-2 font-semibold py-2 px-4 rounded transition duration-400 ease-in-out"
+                    aria-label="Increase quantity"
                   >
                     +
                   </button>
                 </div>
-                <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+
+                {/* Buttons */}
+                <div className="flex flex-col sm:flex-row gap-4 w-full">
                   <button className="flex-1 bg-green-500 text-white py-2 rounded hover:bg-green-600 transition duration-300">
-                    Add to cart
+                    Add to Cart
                   </button>
                   <Link
                     to="/chatting"
