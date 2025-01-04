@@ -1,11 +1,12 @@
 import React from 'react'
 import { Routes,Route } from 'react-router-dom'
 import About from '../Admin/About'
-
+import Addproduct from '../Seller/addproduct'
 function SellerRoutes() {
   return (
    <Routes>
       <Route path="/about" element={<About/>}/>
+      <Route path='/addproduct' element={<Addproduct/>} />
     </Routes>
   )
 }
