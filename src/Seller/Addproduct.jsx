@@ -34,10 +34,10 @@ function Addproduct() {
   return (
     <div className="bg-gray-100 min-h-screen overflow-hidden">
       <Navebar />
-      <div className=" flex flex-col lg:flex-row gap-8 items-center p-5 lg:p-60 ">
+      <div className=" flex flex-col lg:flex-row gap-8 items-center p-5 lg:p-40 mt-10 sm:mt-0 ">
         {/* Thumbnail Uploader Section */}
         <div className="flex justify-center items-center w-full lg:w-1/3">
-          <div className="h-48 w-48 sm:h-64 sm:w-64  border flex items-center justify-center   shadow-gray-400">
+          <div className="h-48 w-48 sm:h-64 sm:w-64   flex items-center justify-center   shadow-gray-400">
             <ThumbnailUploader />
           </div>
         </div>

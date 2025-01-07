@@ -5,88 +5,108 @@ import Pukspuu from '../assets/images/Pukspuu.jpg'
 import bonsai from '../assets/images/bonsai.png'
 import Bananatree from '../assets/images/Bananatree.png'; 
 import Faverate from '../assets/images/favorites.png'
+import Calathea from '../assets/images/Calathea.jpg'
+import Dracaena from '../assets/images/Dracaena.jpg'
+import RubberPlant from '../assets/images/Rubber Plan.jpg'
+import SnakePlant from '../assets/images/Snake Plant.jpg'
+import ZanzibarGem from '../assets/images/Zanzibar Gem.jpg'
+import Alocasia from '../assets/images/Alocasia.jpg'
+import FiddleLeafFig from '../assets/images/Fiddle Leaf Fig.jpg'
+import Bromeliads from '../assets/images/Bromeliads.jpg'
+import MonsteraDeliciosa from '../assets/images/Monstera Deliciosa.jpg'
+import BirdofParadise from '../assets/images/BirdofParadise.png'
+import greenmoneyplant from '../assets/images/green-money-plant.jpg'
+import aglaonemaparrotjungle from '../assets/images/aglaonema-parrot-jungle-indoor.jpg'
+import DracaenaReflexa from '../assets/images/Dracaena Reflexa.jpg'
+import philodendroncongo from '../assets/images/philodendroncongo.jpg'
+import WaterLettuce  from '../assets/images/WaterLettuce.png'
+import Epipremnumaureum from '../assets/images/Epipremnum aureum.png'
+import Crassulaovata from '../assets/images/Crassula ovata.png'
+
+
 import Navebar from '../Combonents/Navebar';
 function HomePagecarts() {
     const carts = [
+       
         {
-          id: 1, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",price: "200",
+          id: 2, url: Pukspuu, PlantName: "Pukspuu", plantingDay: "12/17/24", Height: "10cm",price: "200.00",
         },
         {
-          id: 2, url: Pukspuu, PlantName: "Pukspuu", plantingDay: "12/17/24", Height: "10cm",price: "200",
+          id: 2, url: bonsai, PlantName: "Bonsai", plantingDay: "12/18/24", Height: "10cm",price: "200.00",
         },
         {
-          id: 2, url: bonsai, PlantName: "Bonsai", plantingDay: "12/18/24", Height: "10cm",price: "200",
+          id: 2, url: Calathea, PlantName: "Calathea", plantingDay: "12/19/24", Height: "30cm",price: "200.00",
         },
         {
-          id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/19/24", Height: "10cm",price: "200",
+          id: 2, url: Dracaena, PlantName: "Dracaena", plantingDay: "12/20/24", Height: "40cm",price: "200.00",
         },
         {
-          id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/20/24", Height: "10cm",price: "200",
+          id: 2, url: RubberPlant, PlantName: "Rubber Plant", plantingDay: "12/21/24", Height: "40cm",price: "200.00",
         },
         {
-          id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/21/24", Height: "10cm",price: "200",
+          id: 2, url: SnakePlant, PlantName: "Snake Plant", plantingDay: "12/22/24", Height: "60cm",price: "200.00",
         },
         {
-          id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/22/24", Height: "10cm",price: "200",
+          id: 1, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10inch",price: "200.00",
         },
         {
-          id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/23/24", Height: "10cm",price: "200",
+          id: 2, url: ZanzibarGem, PlantName: "Zanzibar Gem", plantingDay: "12/23/24", Height: "50cm",price: "200.00",
         },
         {
-          id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/24/24", Height: "10cm",price: "200",
+          id: 2, url: Alocasia, PlantName: "Alocasia", plantingDay: "12/24/24", Height: "50cm",price: "200.00",
         },
         {
-          id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/25/24", Height: "10cm",price: "200",
+          id: 2, url: FiddleLeafFig, PlantName: "Fiddle Leaf Fig", plantingDay: "12/25/24", Height: "30cm",price: "200.00",
         },
         {
-          id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/26/24", Height: "10cm",price: "200",
+          id: 2, url: Bromeliads, PlantName: "Bromeliads", plantingDay: "12/26/24", Height: "10cm",price: "200.00",
         },
         {
-          id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/27/24", Height: "10cm",price: "200",
+          id: 2, url: MonsteraDeliciosa, PlantName: "Monstera Deliciosa", plantingDay: "12/27/24", Height: "70cm",price: "200.00",
         },
         {
-          id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/28/24", Height: "10cm",price: "200",
+          id: 2, url: BirdofParadise, PlantName: "BirdofParadise", plantingDay: "12/28/24", Height: "70cm",price: "200.00",
         },
         {
-          id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/29/24", Height: "10cm",price: "200",
+          id: 2, url: greenmoneyplant, PlantName: "green money plant", plantingDay: "12/29/24", Height: "10inch",price: "360.00",
         },
         {
-          id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/30/24", Height: "10cm",price: "200",
+          id: 2, url:aglaonemaparrotjungle, PlantName: "Aglaonema Parrot Jungle", plantingDay: "12/30/24", Height: "10inch",price: "385.00",
         },
         {
-          id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",price: "200",
-        },
-    
-        {
-          id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",price: "200",
-        },
-        {
-          id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",price: "200",
+          id: 2, url: DracaenaReflexa, PlantName: "Dracaena Reflexa", plantingDay: "12/16/24", Height: "10inch",price: "360.00",
         },
     
         {
-          id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",price: "200",
+          id: 2, url: philodendroncongo, PlantName: "Philodendron Congo", plantingDay: "12/16/24", Height: "10inch",price: "560.00",
         },
         {
-          id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",price: "200",
+          id: 2, url: WaterLettuce, PlantName: "Water Lettuce", plantingDay: "12/16/24", Height: "10inch",price: "25.00",
+        },
+    
+        {
+          id: 2, url: Epipremnumaureum, PlantName: "Epipremnum Aureum", plantingDay: "12/16/24", Height: "10inch",price: "69.00",
         },
         {
-          id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",price: "200",
+          id: 2, url: Crassulaovata, PlantName: "Crassula Ovata", plantingDay: "12/16/24", Height: "10inch",price: "89.00",
         },
         {
-          id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",price: "200",
+          id: 2, url: FiddleLeafFig, PlantName: "Fiddle Leaf Fig", plantingDay: "12/25/24", Height: "30cm",price: "200.00",
         },
         {
-          id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",price: "200",
+          id: 2, url: Bromeliads, PlantName: "Bromeliads", plantingDay: "12/26/24", Height: "10cm",price: "200.00",
         },
         {
-          id: 2, url: Bananatree, PlantName: "Banana Plant", plantingDay: "12/16/24", Height: "10cm",price: "200",
+          id: 2, url: MonsteraDeliciosa, PlantName: "Monstera Deliciosa", plantingDay: "12/27/24", Height: "70cm",price: "200.00",
+        },
+        {
+          id: 2, url: BirdofParadise, PlantName: "BirdofParadise", plantingDay: "12/28/24", Height: "70cm",price: "200.00",
         },
         
       ];
   return (
     <div className="bg-gray-100 min-h-screen overflow-hidden">
-        <Navebar/>
+        <Navebar id="fixed z-20"/>
     <div className="p-6 grid grid-cols-1  sm:grid-cols-2  rounded-[4px]  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 relative top-28 pb-40">
   {carts.map((cart) => (
     <Link to={`/details`} key={cart.id} state={{ cart }}>

@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import FloraflowLogo from '../assets/images/FloraflowLogo.png';
 import Profileicon from '../assets/images/profileicon.png';
 import Navebarinput from '../assets/images/Navebarinput.png';
-import { Link } from 'react-router-dom';
 import Useredeuser from './Useredeuser';
+import home from '../assets/images/home.png'
 
-function Navebar() {
-  const [state, setState] = useState({
-    isMobileMenuOpen: false,
-  });
+function Navebar({id = ''}) {
+  const [state, setState] = useState({ isMobileMenuOpen: false });
 
   const toggleMobileMenu = () => {
     setState((prevState) => ({
@@ -18,12 +17,10 @@ function Navebar() {
   };
 
   return (
-    <div className="h-auto w-full bg-green-800 shadow-md fixed z-20 ">
+    <div className={`h-auto w-full bg-green-800 shadow-md ${id}`}>
       <Useredeuser />
 
-      {/* Navbar Container */}
-      <div className="h-[100px] w-full flex items-center justify-between px-4 lg:px-8 overflow-hidden">
-        {/* Left Section */}
+      <div className="h-[100px] w-full flex items-center justify-between px-4 lg:px-8">
         <div className="flex items-center">
           <img
             src={FloraflowLogo}
@@ -44,20 +41,21 @@ function Navebar() {
           </div>
         </div>
 
-        {/* Right Section */}
-        <div className="hidden md:flex items-center gap-x-4 lg:gap-x-6">
-          <h3 className="text-sm lg:text-lg font-medium text-white hover:underline cursor-pointer">
+        <div className=" md:flex items-center gap-x-4 lg:gap-x-6">
+          <h3 className="text-sm lg:text-lg font-medium text-white hover:underline hidden lg:block">
             <Link to="/homePage">Home</Link>
           </h3>
-          <h3 className="text-sm lg:text-lg font-medium text-white hover:underline cursor-pointer">
+          <h3 className="text-sm lg:text-lg font-medium text-white hover:underline hidden lg:block">
             <Link to="/about">About</Link>
           </h3>
-          <h3 className="text-sm lg:text-lg font-medium text-white hover:underline cursor-pointer">
+          <h3 className="text-sm lg:text-lg font-medium text-white hover:underline hidden lg:block">
             <Link to="/favorite">Favorite</Link>
           </h3>
-          
-          <button className="flex items-center justify-center gap-2 bg-gradient-to-l from-purple-300 to-purple-500 rounded-full text-white font-semibold border-none relative cursor-pointer transition-transform duration-200 shadow-lg hover:shadow-md active:scale-95 w-36 h-10">
-          <svg
+          <Link to={'/notification'}>
+          <button
+            className="bg-gradient-to-l from-purple-300 to-purple-500 rounded-full text-white font-semibold w-36 h-10 hidden lg:flex items-center justify-center gap-1   "
+          >
+            <svg
             viewBox="0 0 448 512"
             className="w-4 h-4 animate-none hover:animate-bell"
             xmlns="http://www.w3.org/2000/svg"
@@ -69,20 +67,20 @@ function Navebar() {
             </svg>
             Notifications
           </button>
-          <button
-            className="h-[40px] lg:h-[50px] w-[40px] lg:w-[50px] rounded-full overflow-hidden hover:shadow-md transition"
-            onClick={() => console.log('Open Modal')}
-          >
-            <Link to={'/profile'}>
-            <img
-              src={Profileicon}
-              alt="Profile Icon"
-              className="h-full w-full object-cover"
-            />
+          </Link>
+          <button className="h-[40px] lg:h-[50px] w-[40px] lg:w-[50px] rounded-full overflow-hidden hidden lg:block">
+            <Link to="/profile">
+              <img
+                src={Profileicon}
+                alt="Profile Icon"
+                className="h-full w-full object-cover"
+              />
             </Link>
           </button>
-        </div>
-        <button className="flex items-center justify-center gap-2 bg-gradient-to-l from-purple-300 to-purple-500 rounded-full text-white font-semibold border-none relative cursor-pointer transition-transform duration-200 shadow-lg hover:shadow-md active:scale-95 w-36 h-10 lg:hidden max-w-5 max-h-5  left-20">
+          <div className="sm:w-auto flex flex-row  md:relative left-24 gap-4 md:w-auto lg:hidden ">
+            <Link to={'/notification'}>
+          <button 
+          className="flex items-center justify-center gap-2 bg-gradient-to-l from-purple-300 to-purple-500 rounded-full text-white font-semibold border-none relative cursor-pointer transition-transform duration-200 shadow-lg hover:shadow-md active:scale-95 w-36 h-10 lg:hidden max-w-5 max-h-5  left-20">
           <svg
             viewBox="0 0 448 512"
             className="w-4 h-4 animate-none hover:animate-bell"
@@ -93,51 +91,36 @@ function Navebar() {
               fill="currentColor"
             ></path>
             </svg>
-           
           </button>
-        {/* Mobile Menu */}
-        <div className="md:hidden flex items-center">
-          <button
-            className="text-white focus:outline-none"
-            onClick={toggleMobileMenu}
-          >
-            ☰
-          </button>
+          </Link>
+            <button className="flex items-center justify-center gap-2 bg-gradient-to-l rounded-full text-white font-semibold border-none relative cursor-pointer transition-transform duration-200 shadow-lg hover:shadow-md active:scale-95 w-36 h-10 lg:hidden max-w-5 max-h-5 left-20">
+                    <Link to="/homePage">
+              <img src={home} alt="" />
+          </Link>
+            </button>
+
         </div>
+        </div>
+        <button
+          onClick={toggleMobileMenu}
+          className="lg:hidden text-white focus:outline-none"
+        >
+          ☰
+        </button>
       </div>
 
-      {/* Mobile Menu Items */}
       {state.isMobileMenuOpen && (
-        <div className="md:hidden flex flex-col bg-green-800 shadow-md">
-          <Link
-            to="/homePage"
-            className="text-white px-4 py-2 hover:bg-green-700"
-          >
-            Home
-          </Link>
-          <Link
-            to="/about"
-            className="text-white px-4 py-2 hover:bg-green-700"
-          >
+        <div className="md:hidden flex flex-col bg-green-800">
+         
+          <Link to="/about" className="text-white px-4 py-2">
             About
           </Link>
-          <Link
-            to="/favorite"
-            className="text-white px-4 py-2 hover:bg-green-700"
-          >
-           favorite
+          <Link to="/favorite" className="text-white px-4 py-2">
+            Favorite
           </Link>
-          
-
-           
-          <button
-            className="text-white px-4 py-2 hover:bg-green-700"
-          
-          >
-            <Link to={'/profile'}>
+          <Link to="/profile" className="text-white px-4 py-2">
             Profile
-            </Link>
-          </button>
+          </Link>
         </div>
       )}
     </div>

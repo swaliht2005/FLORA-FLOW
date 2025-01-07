@@ -15,7 +15,7 @@ function HomePage() {
     <div className="bg-gray-100 min-h-screen overflow-hidden">
     {/* Navbar */}
     <div className="h-[100px] w-full">
-      <Navebar />
+      <Navebar id="fixed z-20" />
     </div>
       <HomeBanner/>
     {/* Cards Section */}
