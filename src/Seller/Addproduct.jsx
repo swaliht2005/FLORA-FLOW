@@ -75,7 +75,7 @@ function Addproduct() {
           <input
             type="text"
             value={state.updatePrice}
-            placeholder="Price ₹"
+            placeholder="Price ₹ 00.00"
             onChange={(e) => dispatch({ type: "updatePrice", payload: e.target.value })}
             className="text-lg md:text-xl font-bold w-full outline-none px-3 border-b border-gray-600"
           />
