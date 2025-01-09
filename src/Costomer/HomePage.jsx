@@ -6,7 +6,9 @@ import Footer from '../Combonents/Footer';
 import HomePagecarts from './HomePagecarts';
 
 import HomeBanner from './HomeBanner';
+import Aboutme from '../Admin/Aboutme';
 import Album from './Album';
+import ContactUS from '../Admin/ContactUS';
 function HomePage() {
  
  
@@ -22,7 +24,7 @@ function HomePage() {
       <Album/>
    
     <HomePagecarts/>
-
+    
     {/* Footer */}
     <Footer />
   </div>

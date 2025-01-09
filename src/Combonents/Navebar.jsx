@@ -108,6 +108,7 @@ function Navebar({id = ''}) {
           ☰
         </button>
       </div>
+             
 
       {state.isMobileMenuOpen && (
         <div className="md:hidden flex flex-col bg-green-800">
