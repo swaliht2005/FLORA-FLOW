@@ -1,10 +1,10 @@
 import React from 'react'
-
+import Navebar from '../Combonents/Navebar'
 function Notification() {
   return (
-    <div>
-      swalih
-    </div>
+    <div className="h-[100px] w-full">
+    <Navebar id="fixed z-20" />
+  </div>
   )
 }
 

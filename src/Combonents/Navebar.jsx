@@ -19,14 +19,18 @@ function Navebar({id = ''}) {
   return (
     <div className={`h-auto w-full bg-green-800 shadow-md ${id}`}>
       <Useredeuser />
-
-      <div className="h-[100px] w-full flex items-center justify-between px-4 lg:px-8">
+   
+      <div className="h-[100px] w-full flex items-center justify-between px-4 lg:px-8 ">
         <div className="flex items-center">
           <img
             src={FloraflowLogo}
             alt="Flora Flow Logo"
-            className="h-[50px] w-[50px] lg:h-[80px] lg:w-[80px] rounded-full"
+            className="h-[50px] w-[50px] lg:h-[80px] lg:w-[80px]  rounded-full"
           />
+       <h3 className='font-handwriting text-3xl text-white sm:text-2xl md:text-sm lg:text-3xl xl:text-4xl'>
+        Flora Flow
+      </h3>
+         
           <div className="hidden md:flex h-[40px] w-[200px] lg:w-[400px] bg-white rounded-full shadow items-center px-4 ml-4">
             <img
               src={Navebarinput}
@@ -42,6 +46,9 @@ function Navebar({id = ''}) {
         </div>
 
         <div className=" md:flex items-center gap-x-4 lg:gap-x-6">
+        <h3 className="text-sm lg:text-lg font-medium text-white hover:underline hidden lg:block">
+            <Link to="/addproduct">Add Plants</Link>
+          </h3>
           <h3 className="text-sm lg:text-lg font-medium text-white hover:underline hidden lg:block">
             <Link to="/homePage">Home</Link>
           </h3>
@@ -51,6 +58,7 @@ function Navebar({id = ''}) {
           <h3 className="text-sm lg:text-lg font-medium text-white hover:underline hidden lg:block">
             <Link to="/favorite">Favorite</Link>
           </h3>
+          
           <Link to={'/notification'}>
           <button
             className="bg-gradient-to-l from-purple-300 to-purple-500 rounded-full text-white font-semibold w-36 h-10 hidden lg:flex items-center justify-center gap-1   "
@@ -112,7 +120,9 @@ function Navebar({id = ''}) {
 
       {state.isMobileMenuOpen && (
         <div className="md:hidden flex flex-col bg-green-800">
-         
+         <Link to="/addproduct" className="text-white px-4 py-2">
+            Add plants
+          </Link>
           <Link to="/about" className="text-white px-4 py-2">
             About
           </Link>
