@@ -19,12 +19,12 @@ function HomePage() {
     <div className="h-[100px] w-full">
       <Navebar id="fixed z-20" />
     </div>
-      <HomeBanner/>
+      <HomeBanner />
     {/* Cards Section */}
       <Album/>
-   
-    <HomePagecarts/>
-    
+   <div className="h-[2700px] relative bottom-96 ">
+    <HomePagecarts />
+    </div>
     {/* Footer */}
    
   </div>

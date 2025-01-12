@@ -6,7 +6,7 @@ import Homeimages from '../assets/images/homeimages.png'; // Replace this with t
 const HomeBanner = () => {
   return (
     <div
-      className="relative  h-[700px] mx-auto w-screen flex  justify-center items-center  bg-cover bg-center"
+      className="relative  h-[1000px] mx-auto w-screen flex bottom-72  justify-center items-center  bg-cover bg-center"
       style={{
         backgroundImage: `url(${Homeimages})`,
         backgroundAttachment: "fixed",

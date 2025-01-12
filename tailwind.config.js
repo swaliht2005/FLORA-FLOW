@@ -1,3 +1,5 @@
+import Detailse from './src/Costomer/Detailse';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -13,6 +15,7 @@ export default {
         Skyblue:'#A3D8F4',
         biscate:'#fff8ed',
         ilamgreen:"#0c4d38b3",
+        
       },
       fontFamily: {
         sans: ['Roboto', 'Arial', 'sans-serif'], // Custom sans-serif font
@@ -20,6 +23,7 @@ export default {
         custom: ['"Your Custom Font"', 'sans-serif'], // Replace with your custom font
         handwriting: ['Playwrite BE VLG Guides', 'cursive'],
         rubikvinyl: ['"Rubik Vinyl"', 'cursive'],
+      
       },
     },
   },

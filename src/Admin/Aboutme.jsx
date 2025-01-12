@@ -165,7 +165,7 @@ function Aboutme() {
             Join the Green Revolution
           </h2>
           <div
-          className="h-[400px] w-full mt-4 sm:w-[80%] md:w-[60%] lg:w-[45%] xl:w-[30%] border p-6 rounded-lg shadow-lg hover:shadow-xl shadow-cyan-500/50 relative group"
+          className="h-[400px] w-full mt-4 sm:w-[80%] md:w-[60%] lg:w-[45%] xl:w-[30%] border lg:ml-52 p-6 rounded-lg shadow-lg hover:shadow-xl shadow-cyan-500/50 relative group"
           style={{
             backgroundImage: `url(${join})`,
             backgroundSize: "cover",

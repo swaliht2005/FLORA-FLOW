@@ -2,8 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 function Album() {
   return (
-    <div className="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+    <div className="bg-gray-900 text-white min-h-screen relative bottom-72 flex items-center justify-center">
       <section className="max-w-6xl w-full mx-auto">
+          <h1>weekend offer sals</h1>
         <div className="flex flex-wrap -mx-4">
           {/* Card 1 */}
           <div className="w-full sm:w-1/2 md:w-1/3 px-4 mb-8">

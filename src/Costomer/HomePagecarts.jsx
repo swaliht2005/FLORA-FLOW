@@ -105,7 +105,7 @@ function HomePagecarts() {
         
       ];
   return (
-    <div className="bg-gray-100 min-h-screen overflow-hidden">
+    <div className="bg-gray-100 min-h-screen overflow-hidden  bottom-7">
         <Navebar id="fixed z-20"/>
     <div className="p-6 grid grid-cols-1  sm:grid-cols-2  rounded-[4px]  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 relative top-28 pb-40">
   {carts.map((cart) => (
