@@ -55,11 +55,11 @@ const closeinput = ()=>{
         </div>
 
         <div className=" md:flex items-center gap-x-4 lg:gap-x-6">
-        <h3 className="text-sm lg:text-lg font-medium text-white hover:underline hidden lg:block">
-            <Link to="/addproduct">Add Plants</Link>
-          </h3>
           <h3 className="text-sm lg:text-lg font-medium text-white hover:underline hidden lg:block">
             <Link to="/homePage">Home</Link>
+          </h3>
+        <h3 className="text-sm lg:text-lg font-medium text-white hover:underline hidden lg:block">
+            <Link to="/addproduct">Add Plants</Link>
           </h3>
           <h3 className="text-sm lg:text-lg font-medium text-white hover:underline hidden lg:block">
             <Link to="/about">About</Link>

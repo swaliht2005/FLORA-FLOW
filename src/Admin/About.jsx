@@ -7,7 +7,7 @@ import Navebar from '../Combonents/Navebar';
 function About(props) {
   return (
     <div className=" min-w-screen w-screen  flex items-center justify-center bg-gray-200  overflow-hidden flex-col">
-    <div className="h-[100px] w-full">
+    <div className=" w-full">
       <Navebar id=" w-full fixed z-20" />
     </div>
      <Aboutme/>

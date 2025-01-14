@@ -68,7 +68,7 @@ const Login = () => {
             type="submit"
             className="w-full bg-green-600 text-white py-2 px-4 text-sm sm:text-base rounded-md shadow hover:bg-green-700 focus:ring-2  focus:outline-none"
           >
-            <Link to={"/HomePage"}>
+            <Link to={"/homePage"}>
             Login
             </Link>
           </button>
