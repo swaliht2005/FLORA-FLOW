@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes,Route } from 'react-router-dom'
 import About from '../Admin/About'
-import Addproduct from 'src/Seller/Addproduct.jsx'
+import Addproduct from '/src/Seller/Addproduct.jsx'
 
 
 function SellerRoutes() {
