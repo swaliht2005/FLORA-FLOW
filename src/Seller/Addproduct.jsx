@@ -2,7 +2,7 @@ import React, { useReducer } from "react";
 import { Link } from "react-router-dom";
 import Navebar from "../Combonents/Navebar";
 import ThumbnailUploader from "./ThumbnailUploader";
-import addplants from '../assets/images/addplants.jpg'
+import addplants from '/src/assets/images/addplants.jpg'
 
 function Addproduct() {
   const initialState = {
