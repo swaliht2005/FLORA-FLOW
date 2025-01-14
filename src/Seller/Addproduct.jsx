@@ -37,7 +37,7 @@ function Addproduct() {
    style={{
           backgroundImage: `url(${addplants})`,
           backgroundAttachment: "fixed",
-          backgroundSize:"cover",
+          backgroundSize:"contain",
           // ba
       }}>
       <Navebar />
