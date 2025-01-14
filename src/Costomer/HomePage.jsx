@@ -16,13 +16,13 @@ function HomePage() {
   return (
     <div className="bg-gray-100 min-h-screen overflow-hidden">
     {/* Navbar */}
-    <div className="h-[100px] w-full">
+    <div className=" w-full">
       <Navebar id="fixed z-20" />
     </div>
       <HomeBanner />
     {/* Cards Section */}
       <Album/>
-   <div className="h-[2700px] relative bottom-96 ">
+   <div className="h-auto  lg:bottom-96  sm:bottom-0">
     <HomePagecarts />
     </div>
     {/* Footer */}

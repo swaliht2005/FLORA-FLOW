@@ -25,6 +25,18 @@ export default {
         rubikvinyl: ['"Rubik Vinyl"', 'cursive'],
       
       },
+      extend: {
+        animation: {
+          bounce: "bounce 2s infinite",
+          fadeIn: "fadeIn 2s ease-in-out",
+        },
+        keyframes: {
+          fadeIn: {
+            "0%": { opacity: 0 },
+            "100%": { opacity: 1 },
+          },
+        },
+      },
     },
   },
   plugins: [],

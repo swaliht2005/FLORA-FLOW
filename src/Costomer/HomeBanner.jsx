@@ -6,7 +6,7 @@ import Homeimages from '../assets/images/homeimages.png'; // Replace this with t
 const HomeBanner = () => {
   return (
     <div
-      className="relative  h-[1000px] mx-auto w-screen flex bottom-72  justify-center items-center  bg-cover bg-center"
+      className="  h-[780px] mx-auto w-screen flex bottom-72  justify-center items-center  bg-cover bg-center"
       style={{
         backgroundImage: `url(${Homeimages})`,
         backgroundAttachment: "fixed",
@@ -19,7 +19,7 @@ const HomeBanner = () => {
           Spruce Up Your Space: Discover Fresh Greenery with Exclusive Deals
         </h3>
       </div>
-      <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+      <div className="absolute inset-0 bg-black bg-opacity-30 "></div>
     </div>
   );
 };

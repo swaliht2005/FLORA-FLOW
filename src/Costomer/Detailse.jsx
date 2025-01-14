@@ -4,6 +4,7 @@
 import { useLocation } from "react-router-dom";
 import Navebar from "../Combonents/Navebar";
 import { Link } from "react-router-dom";
+import details from '../assets/images/details.jpg'
 import { useState } from "react";
 
 function Detailse() {
@@ -20,7 +21,12 @@ function Detailse() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-100">
+    <div className="flex flex-col min-h-screen bg-gray-100"
+    style={{
+      backgroundImage:`url(${details})`,
+      backgroundSize:"cover",
+      backgroundPosition: "center",
+    }}>
       {/* Navbar */}
       <Navebar id="fixed z-20" />
 

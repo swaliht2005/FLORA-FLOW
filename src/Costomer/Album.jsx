@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import WeekendOffer from '../Combonents/WeekendOffer';
 function Album() {
   return (
-    <div className="bg-gray-900 text-white min-h-screen relative bottom-72 flex items-center justify-center">
+    <div className="bg-gray-900 text-white min-h-screen  bottom-72 flex items-center justify-center">
       <section className="max-w-6xl w-full mx-auto">
-          <h1>weekend offer sals</h1>
+      <div className="relative lg:bottom-20"><WeekendOffer /></div>
         <div className="flex flex-wrap -mx-4">
           {/* Card 1 */}
           <div className="w-full sm:w-1/2 md:w-1/3 px-4 mb-8">
@@ -12,7 +13,7 @@ function Album() {
               <div className="absolute inset-0 bg-black/50 flex flex-col justify-between p-6 transform group-hover:rotate-y-180 group-hover:bg-opacity-100 transition-all duration-500">
                 <h1 className="text-3xl font-bold translate-z-0">Little<br />Bonsai</h1>
                 <span className="text-2xl">$79</span>
-                <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-800 text-center opacity-0 group-hover:opacity-100 group-hover:rotate-y-180 transition-all duration-500">
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-800 text-center opacity-0 group-hover:opacity-75 group-hover:rotate-y-180 transition-all duration-500">
                 
                 <Link to={'/details'} 
                 state={{
@@ -33,7 +34,7 @@ function Album() {
               <div className="absolute inset-0 bg-black/50 flex flex-col justify-between p-6 transform group-hover:rotate-y-180 group-hover:bg-opacity-100 transition-all duration-500">
                 <h1 className="text-3xl font-bold translate-z-0">Tropical<br />Leaf</h1>
                 <span className="text-2xl">$35</span>
-                <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-800 text-center opacity-0 group-hover:opacity-100 group-hover:rotate-y-180 transition-all duration-500">
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-800 text-center opacity-0 group-hover:opacity-75 group-hover:rotate-y-180 transition-all duration-500">
                 <Link to={'/details'}
                  state={{
                   cart: {
@@ -54,7 +55,7 @@ function Album() {
               <div className="absolute inset-0 bg-black/50 flex flex-col justify-between p-6 transform group-hover:rotate-y-180 group-hover:bg-opacity-100 transition-all duration-500">
                 <h1 className="text-3xl font-bold translate-z-0">Marijuana<br />Chill</h1>
                 <span className="text-2xl">$155</span>
-                <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-800 text-center opacity-0 group-hover:opacity-100 group-hover:rotate-y-180 transition-all duration-500">
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-800 text-center opacity-0 group-hover:opacity-75  group-hover:rotate-y-180 transition-all duration-500">
                 <Link to={'/details'}
                  state={{
                   cart: {

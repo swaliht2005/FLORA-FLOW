@@ -12,12 +12,12 @@ const ThumbnailUploader = () => {
   };
 
   return (
-    <div className="flex  flex-col  justify-center items-center text-center font-sans text-gray-500 ">
+    <div className="flex  flex-col  justify-center items-center text-center font-sans text-white ">
       {/* Heading */}
       <h3 className="font-bold text-lg mb-2 sm:text-xl">Add Plant Photo</h3>
       
       {/* Image Container */}
-      <div className="relative w-48 h-48 sm:w-60 sm:h-60 lg:w-96 lg:h-72 border border-gray-300 rounded-lg bg-gray-100 flex justify-center items-center overflow-hidden">
+      <div className="relative w-48 h-48 sm:w-60 sm:h-60 lg:w-96 lg:h-72  rounded-lg  flex justify-center items-center overflow-hidden">
         {image ? (
           <img
             src={image}
@@ -48,7 +48,7 @@ const ThumbnailUploader = () => {
       </div>
 
       {/* Description */}
-      <p className="mt-2 text-sm sm:text-base lg:text-lg px-2">
+      <p className="mt-2 text-sm sm:text-base lg:text-lg text-white px-2">
         Set the product thumbnail image. Only image files are accepted.
       </p>
     </div>

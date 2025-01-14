@@ -2,6 +2,7 @@ import React, { useReducer } from "react";
 import { Link } from "react-router-dom";
 import Navebar from "../Combonents/Navebar";
 import ThumbnailUploader from "./ThumbnailUploader";
+import addplants from '../assets/images/addplants.jpg'
 
 function Addproduct() {
   const initialState = {
@@ -32,7 +33,13 @@ function Addproduct() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <div className="bg-gray-100 min-h-screen overflow-hidden">
+    <div className="bg-gray-100 min-h-screen overflow-hidden"
+   style={{
+          backgroundImage: `url(${addplants})`,
+          backgroundAttachment: "fixed",
+          backgroundSize:"cover",
+          // ba
+      }}>
       <Navebar />
       <div className=" flex flex-col lg:flex-row gap-8 items-center p-5 lg:p-40 mt-10 sm:mt-0 ">
         {/* Thumbnail Uploader Section */}
@@ -50,7 +57,7 @@ function Addproduct() {
             value={state.name}
             placeholder="Plant Name"
             onChange={(e) => dispatch({ type: "updateName", payload: e.target.value })}
-            className="text-lg md:text-xl font-bold w-full outline-none px-3 border-b border-gray-600"
+            className="text-lg md:text-xl font-bold w-full outline-none px-3 py-3 rounded-full  bg-white opacity-70"
           />
 
           {/* Planting Day Input */}
@@ -59,7 +66,7 @@ function Addproduct() {
             value={state.updatePlantingDay}
             placeholder="Planting Day"
             onChange={(e) => dispatch({ type: "updatePlantingDay", payload: e.target.value })}
-            className="text-lg md:text-xl font-bold w-full outline-none px-3 border-b border-gray-600"
+            className="text-lg md:text-xl font-bold w-full outline-none px-3  py-3 rounded-full  bg-white opacity-70 "
           />
 
           {/* Plant Height Input */}
@@ -68,7 +75,7 @@ function Addproduct() {
             value={state.updateHeight}
             placeholder="Plant Height"
             onChange={(e) => dispatch({ type: "updateHeight", payload: e.target.value })}
-            className="text-lg md:text-xl font-bold w-full outline-none px-3 border-b border-gray-600"
+            className="text-lg md:text-xl font-bold w-full outline-none px-3 py-3 rounded-full  bg-white opacity-70"
           />
 
           {/* Price Input */}
@@ -77,7 +84,7 @@ function Addproduct() {
             value={state.updatePrice}
             placeholder="Price ₹ 00.00"
             onChange={(e) => dispatch({ type: "updatePrice", payload: e.target.value })}
-            className="text-lg md:text-xl font-bold w-full outline-none px-3 border-b border-gray-600"
+            className="text-lg md:text-xl font-bold w-full outline-none px-3 py-3 rounded-full  bg-white opacity-70"
           />
 
           {/* About Textarea */}
@@ -85,7 +92,7 @@ function Addproduct() {
             value={state.about}
             placeholder="About you"
             onChange={(e) => dispatch({ type: "updateAbout", payload: e.target.value })}
-            className="w-full mt-2 border border-gray-300 outline-none px-3 rounded p-2"
+            className="w-full mt-2 py-3   bg-white opacity-70 outline-none px-3 rounded p-2"
             rows="3"
           ></textarea>
 
