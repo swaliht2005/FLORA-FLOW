@@ -48,9 +48,9 @@ const ThumbnailUploader = () => {
       </div>
 
       {/* Description */}
-      <p className="mt-2 text-sm sm:text-base lg:text-lg text-white px-2">
+      {/* <p className="mt-2 text-sm sm:text-base lg:text-lg text-white px-2">
         Set the product thumbnail image. Only image files are accepted.
-      </p>
+      </p> */}
     </div>
   );
 };

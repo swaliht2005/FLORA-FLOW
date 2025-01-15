@@ -11,7 +11,8 @@ function Favorite() {
     style={{
       backgroundImage: `url(${favorite})`,
       backgroundAttachment: "fixed",
-      backgroundSize:"contain",
+      backgroundSize:"cover",
+      backgroundPosition:"center"
   }}>
     <div className="flex flex-col min-h-screen">
       <Navebar />

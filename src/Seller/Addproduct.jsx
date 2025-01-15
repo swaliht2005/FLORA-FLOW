@@ -37,8 +37,9 @@ function Addproduct() {
    style={{
           backgroundImage: `url(${addplants})`,
           backgroundAttachment: "fixed",
-          backgroundSize:"contain",
-          // ba
+          backgroundPosition:"center",
+          backgroundSize:"cover",
+          
       }}>
       <Navebar />
       <div className=" flex flex-col lg:flex-row gap-8 items-center p-5 lg:p-40 mt-10 sm:mt-0 ">

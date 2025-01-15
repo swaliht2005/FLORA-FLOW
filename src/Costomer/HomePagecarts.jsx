@@ -109,6 +109,7 @@ function HomePagecarts() {
     style={{
      backgroundImage: `url(${productcarts})`,
      backgroundAttachment: "fixed",
+     backgroundPosition:"center",
      backgroundSize:"contain", 
     }}>
         <Navebar id="fixed z-20"/>
