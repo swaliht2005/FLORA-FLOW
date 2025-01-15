@@ -25,7 +25,7 @@ const closeinput = ()=>{
 }
 
   return (
-    <div className={`h-auto w-[100%]   backdrop-blur-md bg-white/30   shadow-xl ${id}`}>
+    <div className={`h-auto w-[100%]   bg-green-900   shadow-xl ${id}`}>
       <Useredeuser />
    
       <div className="py-4 md:h-[100px]  w-full flex items-center justify-between px-4 lg:px-8 ">
