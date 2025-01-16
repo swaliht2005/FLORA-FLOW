@@ -23,6 +23,7 @@ function HomePage() {
     {/* Cards Section */}
       <Album/>
    <div className="h-auto  lg:bottom-96  sm:bottom-0">
+    
     <HomePagecarts />
     </div>
     {/* Footer */}

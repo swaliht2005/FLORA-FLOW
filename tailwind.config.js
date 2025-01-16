@@ -16,6 +16,7 @@ export default {
         biscate:'#fff8ed',
         ilamgreen:"#0c4d38b3",
         
+        
       },
       fontFamily: {
         sans: ['Roboto', 'Arial', 'sans-serif'], // Custom sans-serif font

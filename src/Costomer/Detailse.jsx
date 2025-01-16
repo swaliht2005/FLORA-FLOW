@@ -33,7 +33,7 @@ function Detailse() {
       {/* Product Card */}
       <div className="flex items-center justify-center mt-8 px-4 lg:mt-12 lg:py-14 overflow-hidden">
         {cart ? (
-          <div className="w-full max-w-4xl bg-white rounded-lg shadow-md p-6 lg:p-12 flex flex-wrap lg:flex-nowrap items-center gap-8 sm:pb-16 mt-20 sm:mt-0">
+          <div className="w-full max-w-4xl bg-white  rounded-lg shadow-md p-6 lg:p-12 flex flex-wrap lg:flex-nowrap items-center gap-8 sm:pb-16 mt-20 sm:mt-0">
             {/* Image Section */}
             <div className="w-full lg:w-1/2 flex flex-col items-center">
               <img

@@ -22,8 +22,8 @@ import philodendroncongo from '../assets/images/philodendroncongo.jpg'
 import WaterLettuce  from '../assets/images/WaterLettuce.png'
 import Epipremnumaureum from '../assets/images/Epipremnum aureum.png'
 import Crassulaovata from '../assets/images/Crassula ovata.png'
-import productcarts from '../assets/images/productcarts.jpg'
-
+// import productcarts from '../assets/images/productcarts.jpg'
+// import productcarts from '../assets/images/WhatsApp Image 2025-01-15 at 12.09.01_08f1387a.jpg'
 import Navebar from '../Combonents/Navebar';
 function HomePagecarts() {
     const carts = [
@@ -105,14 +105,8 @@ function HomePagecarts() {
         
       ];
   return (
-    <div className="bg-gray-100  overflow-hidden  "
-    style={{
-     backgroundImage: `url(${productcarts})`,
-     backgroundAttachment: "fixed",
-     backgroundPosition:"center",
-     backgroundSize:"contain", 
-     
-    }}>
+    <div className="bg-gray-100  overflow-hidden  ">
+       
         <Navebar id="fixed z-20"/>
     <div className="p-6 grid grid-cols-1  sm:grid-cols-2  rounded-[4px]  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 relative top-28 pb-40">
   {carts.map((cart) => (

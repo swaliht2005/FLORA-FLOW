@@ -33,33 +33,35 @@ function Addproduct() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <div className="bg-gray-100 min-h-screen overflow-hidden"
+    <div className="relative bg-slate-400 min-h-screen overflow-hidden"
    style={{
           backgroundImage: `url(${addplants})`,
           backgroundAttachment: "fixed",
           backgroundPosition:"center",
           backgroundSize:"cover",
-          
+          backgroundRepeat:"no-repeat"
       }}>
-      <Navebar />
-      <div className=" flex flex-col lg:flex-row gap-8 items-center p-5 lg:p-40 mt-10 sm:mt-0 ">
+       <div>      <Navebar />       </div>
+       <div className="bg-black opacity-40 absolute h-screen w-full " ></div>
+
+      <div className=" flex flex-col lg:flex-row gap-8 items-center p-5 lg:p-40 mt-10 sm:mt-0 z-50 ">
         {/* Thumbnail Uploader Section */}
-        <div className="flex justify-center items-center w-full lg:w-1/3">
-          <div className="h-48 w-48 sm:h-64 sm:w-64   flex items-center justify-center   shadow-gray-400">
+        <div className="flex justify-center items-center w-full lg:w-1/3 z-40">
+          <div className="h-48 w-48 sm:h-64 sm:w-64   flex items-center justify-center z-40   shadow-gray-400">
             <ThumbnailUploader />
           </div>
         </div>
 
         {/* Form Section */}
-        <div className="w-full lg:w-2/3 max-w-3xl flex flex-col gap-4">
+        <div className="w-full lg:w-2/3 max-w-3xl flex flex-col gap-4 z-40">
           {/* Plant Name Input */}
           <input
             type="text"
             value={state.name}
             placeholder="Plant Name"
             onChange={(e) => dispatch({ type: "updateName", payload: e.target.value })}
-            className="text-lg md:text-xl font-bold w-full outline-none px-3 py-3 rounded-full  bg-white opacity-70"
-          />
+            className="text-lg md:text-xl font-bold w-full outline-none px-3 py-3 rounded-full   bg-white opacity-70"
+        />
 
           {/* Planting Day Input */}
           <input
