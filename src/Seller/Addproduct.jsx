@@ -1,8 +1,12 @@
+
+
+
 import React, { useReducer } from "react";
 import { Link } from "react-router-dom";
 import Navebar from "../Combonents/Navebar";
 import ThumbnailUploader from "./ThumbnailUploader";
-import addplants from '/src/assets/images/addplants.jpg'
+import addplants from "/src/assets/images/addplants.jpg";
+import plantscare from "../assets/images/planscare.jpg";
 
 function Addproduct() {
   const initialState = {
@@ -18,11 +22,11 @@ function Addproduct() {
       case "updateName":
         return { ...state, name: action.payload };
       case "updatePlantingDay":
-        return { ...state, updatePlantingDay: action.payload };
+        return { ...state, Day: action.payload };
       case "updateHeight":
-        return { ...state, height: action.payload };
+        return { ...state, Height: action.payload };
       case "updatePrice":
-        return { ...state, price: action.payload };
+        return { ...state, Price: action.payload };
       case "updateAbout":
         return { ...state, about: action.payload };
       default:
@@ -33,82 +37,94 @@ function Addproduct() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <div className="relative bg-slate-400 min-h-screen overflow-hidden"
-   style={{
-          backgroundImage: `url(${addplants})`,
-          backgroundAttachment: "fixed",
-          backgroundPosition:"center",
-          backgroundSize:"cover",
-          backgroundRepeat:"no-repeat"
-      }}>
-       <div>      <Navebar />       </div>
-       <div className="bg-black opacity-40 absolute h-screen w-full " ></div>
+    <div className="relative min-h-screen flex flex-col bg-gray-200">
+      {/* Navbar */}
+      <div className="z-10">
+        <Navebar />
+      </div>
 
-      <div className=" flex flex-col lg:flex-row gap-8 items-center p-5 lg:p-40 mt-10 sm:mt-0 z-50 ">
-        {/* Thumbnail Uploader Section */}
-        <div className="flex justify-center items-center w-full lg:w-1/3 z-40">
-          <div className="h-48 w-48 sm:h-64 sm:w-64   flex items-center justify-center z-40   shadow-gray-400">
-            <ThumbnailUploader />
-          </div>
+      {/* Content */}
+      <div className="flex flex-col lg:flex-row justify-center items-start gap-12 px-4 sm:px-6 lg:px-20 py-5  relative z-10">
+        {/* Left Section */}
+        <div className="w-full lg:w-96 lg:h-[530px] flex flex-col justify-between bg-opacity-25 rounded-md p-3 shadow-2xl">
+          <img
+            src={plantscare}
+            className="w-full h-60 sm:h-72 lg:h-96 object-cover rounded-lg"
+          />
+          <h3 className="mt-4  sm:text-xl text-gray-800 font-semibold  text-justify">
+            Every plant you grow is a step towards a greener tomorrow. Add a
+            plant today and watch life flourish!
+          </h3>
         </div>
 
-        {/* Form Section */}
-        <div className="w-full lg:w-2/3 max-w-3xl flex flex-col gap-4 z-40">
-          {/* Plant Name Input */}
+        {/* Right Section */}
+        <div className="w-full lg:w-3/5 bg-white bg-opacity-45 h-screen rounded-lg p-6 sm:p-8 shadow-lg flex flex-col gap-6">
+          {/* Thumbnail Uploader */}
+          <div className="w-full flex justify-center">
+            <div className="w-48 sm:w-60 lg:w-80 h-48 sm:h-60 lg:h-72 bg-gray-200 rounded-md overflow-hidden shadow">
+              <ThumbnailUploader />
+            </div>
+          </div>
+
+          {/* Form */}
           <input
             type="text"
             value={state.name}
             placeholder="Plant Name"
-            onChange={(e) => dispatch({ type: "updateName", payload: e.target.value })}
-            className="text-lg md:text-xl font-bold w-full outline-none px-3 py-3 rounded-full   bg-white opacity-70"
-        />
+            onChange={(e) =>
+              dispatch({ type: "updateName", payload: e.target.value })
+            }
+            className="w-full p-4  rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm sm:text-base"
+          />
 
-          {/* Planting Day Input */}
           <input
             type="text"
-            value={state.updatePlantingDay}
+            value={state.Day}
             placeholder="Planting Day"
-            onChange={(e) => dispatch({ type: "updatePlantingDay", payload: e.target.value })}
-            className="text-lg md:text-xl font-bold w-full outline-none px-3  py-3 rounded-full  bg-white opacity-70 "
+            onChange={(e) =>
+              dispatch({ type: "updatePlantingDay", payload: e.target.value })
+            }
+            className="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm sm:text-base"
           />
 
-          {/* Plant Height Input */}
           <input
             type="text"
-            value={state.updateHeight}
+            value={state.Height}
             placeholder="Plant Height"
-            onChange={(e) => dispatch({ type: "updateHeight", payload: e.target.value })}
-            className="text-lg md:text-xl font-bold w-full outline-none px-3 py-3 rounded-full  bg-white opacity-70"
+            onChange={(e) =>
+              dispatch({ type: "updateHeight", payload: e.target.value })
+            }
+            className="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm sm:text-base"
           />
 
-          {/* Price Input */}
           <input
             type="text"
-            value={state.updatePrice}
+            value={state.Price}
             placeholder="Price ₹ 00.00"
-            onChange={(e) => dispatch({ type: "updatePrice", payload: e.target.value })}
-            className="text-lg md:text-xl font-bold w-full outline-none px-3 py-3 rounded-full  bg-white opacity-70"
+            onChange={(e) =>
+              dispatch({ type: "updatePrice", payload: e.target.value })
+            }
+            className="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm sm:text-base"
           />
 
-          {/* About Textarea */}
-          <textarea
+          {/* <textarea
             value={state.about}
-            placeholder="About you"
-            onChange={(e) => dispatch({ type: "updateAbout", payload: e.target.value })}
-            className="w-full mt-2 py-3   bg-white opacity-70 outline-none px-3 rounded p-2"
-            rows="3"
-          ></textarea>
+            placeholder="About the plant"
+            onChange={(e) =>
+              dispatch({ type: "updateAbout", payload: e.target.value })
+            }
+            className="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm sm:text-base"
+            rows="4"
+          ></textarea> */}
 
-          {/* Buttons Section */}
-          <div className="flex flex-wrap gap-3 justify-start lg:justify-center">
-            <button
-              className="w-full sm:w-auto sm:min-w-[100px] text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:outline-none focus:ring-4 focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5"
-            >
-              Set
+          {/* Buttons */}
+          <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+            <button className="px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-bold rounded-lg shadow hover:opacity-90 text-sm sm:text-base">
+              Save
             </button>
             <Link
               to="/chatting"
-              className="w-full sm:w-auto sm:min-w-[100px] text-center text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l focus:outline-none focus:ring-4 focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5"
+              className="px-6 py-3 bg-gradient-to-r from-green-400 to-teal-500 text-white font-bold rounded-lg shadow hover:opacity-90 text-sm sm:text-base"
             >
               Comments
             </Link>

@@ -81,16 +81,23 @@ function Navebar({ id = '' }) {
 
   {/* Search Modal */}
   {input && (
-    <div className="flex w-full sm:w-[250px] md:w-[350px] lg:w-[450px] bg-white rounded-full shadow-lg items-center justify-center p-2">
+  <div
+  className={`flex ${
+    state.isMobileMenuOpen ? 'w-full' : 'w-[300px]'
+  } lg:w-[450px] ${
+    state.isMobileMenuOpen ? 'h-full' : 'h-[50px]'
+  } bg-white  shadow-lg rounded-full hidden h-[50px] w-[300px] md:hidden  lg:flex items-center  pr-4`}
+>
+ 
     <img
       src={Navebarinput}
       alt="Search Icon"
-      className="h-10 w-10 sm:h-5 sm:w-5 md:h-6 md:w-6 lg:h-7 lg:w-7 object-cover rounded-full"
+      className="h-5 w-5 sm:h-6 sm:w-6 lg:h-7 lg:w-7 object-cover  rounded-full"
     />
     <input
       type="text"
       placeholder="Search..."
-      className="flex-grow  outline-none text-gray-700 text-sm sm:text-base rounded-full"
+      className="flex-grow outline-none text-gray-700 text-sm sm:text-base hidden md:block rounded-full px-2 "
     />
     <button onClick={closeInput}>
       <svg
@@ -99,7 +106,7 @@ function Navebar({ id = '' }) {
         fill="currentColor"
         width="20px"
         height="20px"
-        className="close-icon"
+        className="close-icon text-gray-500 hidden md:block hover:text-red-500"
       >
         <path
           fillRule="evenodd"
@@ -109,8 +116,7 @@ function Navebar({ id = '' }) {
       </svg>
     </button>
   </div>
-  
-  )}
+)}
 
   {/* Notification */}
   <Link to="/notification">
@@ -162,6 +168,44 @@ function Navebar({ id = '' }) {
           </Link>
         </div>
       )}
+  {input && (
+  <div
+    className={`flex items-center bg-white shadow-lg rounded-full 
+      ${state.isMobileMenuOpen ? 'w-full h-full' : 'w-[300px] h-[40px]'}
+      sm:w-[450px] lg:hidden`}
+  >
+    {/* Search Icon */}
+    <img
+      src={Navebarinput}
+      alt="Search Icon"
+      className="hidden sm:block h-6 w-6 sm:h-8 sm:w-8 lg:h-10 lg:w-10 rounded-full object-cover ml-2"
+    />
+
+    {/* Search Input */}
+    <input
+      type="text"
+      placeholder="Search..."
+      className="flex-grow outline-none text-gray-700 text-sm sm:text-base   lg:text-lg pl-4"
+    />
+
+    {/* Close Button */}
+    <button onClick={closeInput} className="text-gray-500 hover:text-red-500 pr-2">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        className="h-5 w-5 sm:h-6 sm:w-6"
+      >
+        <path
+          fillRule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L12 10.586l6.293-6.293a1 1 0 111.414 1.414L13.414 12l6.293 6.293a1 1 0 01-1.414 1.414L12 13.414l-6.293 6.293a1 1 0 01-1.414-1.414L10.586 12 4.293 5.707a1 1 0 010-1.414z"
+          clipRule="evenodd"
+        />
+      </svg>
+    </button>
+  </div>
+)}
+
     </div>
   );
 }

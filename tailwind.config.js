@@ -15,7 +15,7 @@ export default {
         Skyblue:'#A3D8F4',
         biscate:'#fff8ed',
         ilamgreen:"#0c4d38b3",
-        
+        pink: '#FF57C5',
         
       },
       fontFamily: {
