@@ -68,7 +68,7 @@ function Navebar({ id = '' }) {
         </div>
 
         {/* Profile and Actions */}
-        <div className="flex items-center gap-3 sm:gap-2">
+        <div className="flex items-center gap-3 sm:gap-2 relative ml-11 ">
   {/* Search Icon */}
   {!input && (
     <button
