@@ -133,7 +133,7 @@ function Navebar({ id = '' }) {
   <img
     src={Profileicon}
     alt="Profile Icon"
-    className="h-7 w-7    md:h-6 md:w-6 lg:h-9 lg:w-9 object-cover rounded-full"
+    className="h-6 w-6    md:h-6 md:w-6 lg:h-8 lg:w-8 object-cover rounded-full"
   />
 </Link>
 

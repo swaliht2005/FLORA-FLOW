@@ -37,33 +37,35 @@ function Addproduct() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <div className="relative min-h-screen flex flex-col bg-gray-200">
+    <div className="relative min-h-screen flex flex-col overflow-hidden bg-gray-200">
       {/* Navbar */}
       <div className="z-10">
         <Navebar />
       </div>
 
       {/* Content */}
-      <div className="flex flex-col lg:flex-row justify-center items-start gap-12 px-4 sm:px-6 lg:px-20 py-5  relative z-10">
+      <div className="flex flex-col lg:flex-row justify-center   items-start gap-10 px-4 sm:px-6 lg:px-20  relative z-10">
         {/* Left Section */}
-        <div className="w-full lg:w-96 lg:h-[530px] flex flex-col justify-between bg-opacity-25 rounded-md p-3 shadow-2xl">
-          <img
-            src={plantscare}
-            className="w-full h-60 sm:h-72 lg:h-96 object-cover rounded-lg"
-          />
-          <h3 className="mt-4  sm:text-xl text-gray-800 font-semibold  text-justify">
-            Every plant you grow is a step towards a greener tomorrow. Add a
-            plant today and watch life flourish!
-          </h3>
-        </div>
+        <div className="w-full lg:w-[500px] lg:h-[680px]  flex-col bg-opacity-25 rounded-md p-2 shadow-2xl hidden sm:block lg:flex">
+        <img
+          src={plantscare}
+          alt="Plant Care"
+          className="w-full h-80 sm:h-72 p-2 lg:h-[606px] object-cover rounded-lg"
+        />
+        <h3 className="text-gray-800 font-semibold text-justify">
+          Every plant you grow is a step towards a greener tomorrow. Add a plant today and watch life flourish!
+        </h3>
+      </div>
+
 
         {/* Right Section */}
-        <div className="w-full lg:w-3/5 bg-white bg-opacity-45 h-screen rounded-lg p-6 sm:p-8 shadow-lg flex flex-col gap-6">
+        <div className="w-full lg:w-2/5 bg-white bg-opacity-45 h-full rounded-lg p-6 sm:p-8 shadow-lg flex flex-col gap-6">
           {/* Thumbnail Uploader */}
           <div className="w-full flex justify-center">
-            <div className="w-48 sm:w-60 lg:w-80 h-48 sm:h-60 lg:h-72 bg-gray-200 rounded-md overflow-hidden shadow">
-              <ThumbnailUploader />
-            </div>
+          <div className="w-48 sm:w-20 lg:w-80 h-48 sm:h-16 lg:h-72 bg-gray-200 rounded-md shadow">
+            <ThumbnailUploader />
+          </div>
+
           </div>
 
           {/* Form */}
@@ -74,7 +76,7 @@ function Addproduct() {
             onChange={(e) =>
               dispatch({ type: "updateName", payload: e.target.value })
             }
-            className="w-full p-4  rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm sm:text-base"
+            className="w-full p-2  rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm sm:text-base"
           />
 
           <input
@@ -84,7 +86,7 @@ function Addproduct() {
             onChange={(e) =>
               dispatch({ type: "updatePlantingDay", payload: e.target.value })
             }
-            className="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm sm:text-base"
+            className="w-full p-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm sm:text-base"
           />
 
           <input
@@ -94,7 +96,7 @@ function Addproduct() {
             onChange={(e) =>
               dispatch({ type: "updateHeight", payload: e.target.value })
             }
-            className="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm sm:text-base"
+            className="w-full p-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm sm:text-base"
           />
 
           <input
@@ -104,7 +106,7 @@ function Addproduct() {
             onChange={(e) =>
               dispatch({ type: "updatePrice", payload: e.target.value })
             }
-            className="w-full p-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm sm:text-base"
+            className="w-full p-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-sm sm:text-base"
           />
 
           {/* <textarea
@@ -119,17 +121,28 @@ function Addproduct() {
 
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-            <button className="px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-bold rounded-lg shadow hover:opacity-90 text-sm sm:text-base">
+            <button className="px-6 py-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-bold rounded-lg shadow hover:opacity-90 text-sm sm:text-base">
               Save
             </button>
             <Link
               to="/chatting"
-              className="px-6 py-3 bg-gradient-to-r from-green-400 to-teal-500 text-white font-bold rounded-lg shadow hover:opacity-90 text-sm sm:text-base"
+              className="px-6 py-2 bg-gradient-to-r from-green-400 to-teal-500 text-white font-bold rounded-lg shadow hover:opacity-90 text-sm sm:text-base"
             >
               Comments
             </Link>
           </div>
         </div>
+        <div className="w-full lg:w-[500px] lg:h-[680px] flex flex-col bg-opacity-25 rounded-md p-2 shadow-2xl lg:hidden">
+          <img
+            src={plantscare}
+            className="w-full h-80 sm:h-72 p-2 lg:h-[606px] object-cover rounded-lg"
+            alt="Plant Care"
+          />
+          <h3 className="text-gray-800 font-semibold text-justify">
+            Every plant you grow is a step towards a greener tomorrow. Add a plant today and watch life flourish!
+          </h3>
+        </div>
+
       </div>
     </div>
   );
