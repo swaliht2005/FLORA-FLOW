@@ -6,7 +6,7 @@ import Homeimages from '../assets/images/homeimages.png'; // Replace this with t
 const HomeBanner = () => {
   return (
     <div
-      className=" w-full  h-screen  mx-auto  flex bottom-72  justify-center items-center  bg-cover bg-center"
+      className=" w-full  h-[400px] lg:h-screen mx-auto  flex bottom-72  justify-center items-center  bg-cover bg-center"
       style={{
         backgroundImage: `url(${Homeimages})`,
         backgroundAttachment: "fixed",
