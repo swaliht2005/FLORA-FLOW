@@ -1,46 +1,10 @@
-// import React from 'react'
-// import FloraflowLogo from '../assets/images/FloraflowLogo.png'
-// import phone from '../assets/images/phone.png'
-// import linkdin from '../assets/images/linkedin-.png'
-// import git from '../assets/images/git.png'
-// import email from '../assets/images/icons8-email-30.png'
 
-// function ContactUS() {
-//   return (
-//    <div className="h-[500px] w-full bg-customGray  flex items-center lg:flex-row sm:flex-col  ">
-//             <div className="">
-//                 <img src={FloraflowLogo} alt="" />
-//             </div>
-//             <div className="text-white flex flex-row gap-10">
-//                 <div className="flex flex-row items-center gap-1 ">
-//                     <img src={phone} alt=""  className='h-10'/>
-//                 <a href="tel:">8095635402</a>
-//                 </div>
-//                 <div className="flex flex-row items-center gap-1">
-//                     <img src={linkdin} alt="" className='h-10' />
-//                  <a href="https://www.linkedin.com/in/muhammed-swalih-3a12b931a/">Click To Linkd in </a>
-//                  </div>
-//                  <div className="flex flex-row items-center gap-1">
-//                     <img src={git} alt="" className='h-10' />
-//                  <a href="https://github.com/swaliht2005/Flora-Flow">Click To Git Hub </a>
-//                  </div>
-//                  <div className="flex flex-row items-center gap-1">
-//                     <img src={email} alt="" className='h-10' />
-//                  <a href="mailto:salumuhammadswalih@gmail.com">Click To Email </a>
-//                  </div>
-                
-//             </div>
-//    </div>
-//   )
-// }
-
-// export default ContactUS
 
 import React from "react";
 import FloraflowLogo from "../assets/images/FloraflowLogo.png";
 import phone from "../assets/images/phone.png";
 import linkdin from "../assets/images/linkedin-.png";
-import git from "../assets/images/git.png";
+import location from "../assets/images/location.png";
 import email from "../assets/images/icons8-email-30.png";
 
 function ContactUS() {
@@ -56,9 +20,9 @@ function ContactUS() {
       </div>
 
       {/* Contact Links Section */}
-      <div className="text-white flex flex-col sm:flex-row lg:flex-row  lg:mt-52  gap-5">
+      <div className="text-white flex flex-col   lg:mt-36  lg:mr-52 gap-5">
         {/* Phone */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
           <img src={phone} alt="Phone" className="h-8 sm:h-10" />
           <a
             href="tel:8095635402"
@@ -69,7 +33,7 @@ function ContactUS() {
         </div>
 
         {/* LinkedIn */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
           <img src={linkdin} alt="LinkedIn" className="h-8 sm:h-10" />
           <a
             href="https://www.linkedin.com/in/muhammed-swalih-3a12b931a/"
@@ -82,20 +46,20 @@ function ContactUS() {
         </div>
 
         {/* GitHub */}
-        <div className="flex items-center gap-2">
-          <img src={git} alt="GitHub" className="h-8 sm:h-10" />
+        <div className="flex items-center gap-4">
+          <img src={location} alt="GitHub" className="h-8 sm:h-10" />
           <a
-            href="https://github.com/swaliht2005/Flora-Flow"
+            href="https://www.google.com/maps/search/calicut+kinfra/@11.207134,75.750338,12z/data=!3m1!4b1?authuser=0&entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D"
             className="text-sm sm:text-base hover:text-gray-300"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Click To GitHub
+            Calicut Kinfra
           </a>
         </div>
 
         {/* Email */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
           <img src={email} alt="Email" className="h-8 sm:h-10" />
           <a
             href="mailto:salumuhammadswalih@gmail.com"

@@ -16,7 +16,12 @@ export default {
         biscate:'#fff8ed',
         ilamgreen:"#0c4d38b3",
         pink: '#FF57C5',
-        
+        pin:{
+          500: '#ec4899', // Example color
+        },
+        yellow: {
+          500: '#f59e0b', // Example color
+        },
       },
       fontFamily: {
         sans: ['Roboto', 'Arial', 'sans-serif'], // Custom sans-serif font

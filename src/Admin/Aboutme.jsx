@@ -41,7 +41,7 @@ function Aboutme() {
           Welcome to Flora Flow, a platform dedicated to bringing nature closer
           to you while promoting sustainability and green living. At Flora
           Flow, we believe that plants are more than just decorative
-          elements—they are a source of life, beauty, and well-being. Whether
+          elements they are a source of life, beauty, and well being. Whether
           you're a seasoned gardener or someone looking to add a touch of green
           to your home or workspace, Flora Flow is here to make it easy and
           enjoyable for everyone.
@@ -61,33 +61,28 @@ function Aboutme() {
 
         {/* Mission Section */}
         <div
-  className="sm:h-[150px] sm:w-[300px] md:h-[300px] md:w-[350px]  lg:h-[400px] lg:w-[440px] lg:p-3  lg:ml-72 sm:relative sm:top-16 lg:top-0 md:top-0 border border-black rounded-full flex flex-col items-center justify-center"
-  style={{
-    backgroundImage: `url(${aboutourimg})`,
-    backgroundAttachment: "fixed",
-    backgroundSize: "contain",
-  }}
->
-<h3 className="text-green-700 font-bold text-center mt-4 sm:text-xs md:text-lg lg:text-2xl font-rubikvinyl">
+  className="sm:h-[150px] sm:w-[300px] md:h-[300px] md:w-[350px]  lg:h-[200px] lg:w-[880px] lg:p-3  lg:ml-72 sm:relative sm:top-16 lg:top-0 md:top-0  rounded-lg  flex flex-col items-center justify-center">
+    
+   
+<h3 className="text-green-700 font-bold text-center mt-4 sm:text-xs md:text-lg lg:text-5xl font-rubikvinyl">
   Our Mission
 </h3>
 
-<p className="text-white leading-7 text-center sm:text-[12px] md:text-sm lg:text-lg xl:text-xl sm:px-2 md:px-4 lg:px-6 font-mono mt-4">
+<p className="text-black leading-7 text-center sm:text-[12px] md:text-sm lg:text-lg xl:text-2xl  sm:px-2 md:px-4 lg:px-6 font-mono mt-4">
   To inspire a greener, healthier planet by making plants accessible,
   affordable, and a natural part of everyday life.
 </p>
-
 </div>
 
 
         {/* What We Offer */}
      <div  >
-                <h2 className="text-2xl  sm:text-[12px] md:text-[30px]  lg:text-[30px]  sm:px-2 sm:mt-10  lg:mt-10   lg:ml-52 font-bold text-green-700 ">
+                <h2 className="text-2xl  sm:text-[12px] md:text-[30px]  lg:text-[30px]  sm:px-2 sm:mt-10  lg:mt-10   lg:ml-96 font-bold text-green-700 ">
                   What We Offer
                 </h2>
 
                 {/* For Customers */}
-                <div className="flex flex-wrap gap-6 justify-start w-full max-w-[1500px] h-auto sm:mt-5  lg:mt-5 lg:ml-52 md:mt-5 ">
+                <div className="flex flex-wrap gap-10 justify-start w-full max-w-[1500px] h-auto sm:mt-5  lg:mt-5 lg:ml-96 md:mt-5 ">
   {/* For Customers */}
   <div
     className="h-[400px] w-[100%] sm:w-[50%] md:w-[45%] lg:w-[35%] xl:w-[30%] border p-6 rounded-lg shadow-lg hover:shadow-xl shadow-cyan-500/50 relative group"
