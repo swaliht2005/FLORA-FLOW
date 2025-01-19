@@ -15,8 +15,8 @@ function Aboutme() {
        
       {/* Background Section */}
       
-      <div className=" w-full   relative">
-        <div className="relative z-10 flex items-center flex-col  h-60 "
+      <div className=" w-full   relative ">
+        <div className="relative z-10 flex items-center flex-col  h-60     "
         style={{
           backgroundImage:`url(${Aboutbgimg})`,
           backgroundAttachment: "fixed",
@@ -34,7 +34,7 @@ function Aboutme() {
       </div>
 
       {/* Content Section */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 space-y-8">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 space-y-8 ">
         {/* About Paragraph */}
           <div className="w-full h-full border sm:flex sm:flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-8 sm:text-justify">
           <p className="text-gray-700 leading-7 sm:text-sm md:text-lg lg:text-2xl font-serif flex-1 sm:text-left md:text-center lg:text-center">
