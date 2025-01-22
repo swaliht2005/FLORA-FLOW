@@ -9,6 +9,9 @@ import forcostomer from '../assets/images/forcostomer.jpg'
 import choice from '../assets/images/Choise.jpg' 
 import forsellerce from '../assets/images/forsellerse.jpg'
 import join from '../assets/images/jointhegreenrevelution.jpg'
+import mission from '../assets/images/mission.jpg'
+import our from '../assets/images/our.jpg'
+import VisionSection from "./VisionSection";
 function Aboutme() {
   return (
     <div className="max-w-full w-full mx-auto  bg-gray-200 shadow-lg rounded-lg">
@@ -34,7 +37,7 @@ function Aboutme() {
       </div>
 
       {/* Content Section */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 space-y-8 ">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 space-y-8 ">
         {/* About Paragraph */}
           <div className="w-full h-full border sm:flex sm:flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-8 sm:text-justify">
           <p className="text-gray-700 leading-7 sm:text-sm md:text-lg lg:text-2xl font-serif flex-1 sm:text-left md:text-center lg:text-center">
@@ -47,7 +50,7 @@ function Aboutme() {
           enjoyable for everyone.
         </p>
 
-            <div className="h-[250px] sm:h-[300px] md:h-[450px] lg:h-[500px] w-[200px] sm:w-[300px] md:w-[400px] lg:w-[300px] md:py-1 bg-gray-400 rounded-lg flex items-center justify-center">
+            <div className="h-[250px]  md:h-[450px] lg:h-[500px] w-[150px] relative left-10 lg:left-0 sm:w-[300px] md:w-[400px] lg:w-[300px] md:py-1 bg-gray-400 rounded-lg flex items-center justify-center">
                 <img
                   src={aboutimg}
                   alt="About Flora Flow"
@@ -58,20 +61,39 @@ function Aboutme() {
           </div>
         </div>
 
-
         {/* Mission Section */}
-        <div
-  className="sm:h-[150px] sm:w-[300px] md:h-[300px] md:w-[350px]  lg:h-[200px] lg:w-[880px] lg:p-3  lg:ml-72 sm:relative sm:top-16 lg:top-0 md:top-0  rounded-lg  flex flex-col items-center justify-center">
-    
-   
-<h3 className="text-green-700 font-bold text-center mt-4 sm:text-xs md:text-lg lg:text-5xl font-rubikvinyl">
-  Our Mission
-</h3>
-
-<p className="text-black leading-7 text-center sm:text-[12px] md:text-sm lg:text-lg xl:text-2xl  sm:px-2 md:px-4 lg:px-6 font-mono mt-4">
-  To inspire a greener, healthier planet by making plants accessible,
-  affordable, and a natural part of everyday life.
-</p>
+        <div className="flex justify-between items-center  rounded-lg  
+              sm:h-[150px] sm:w-[300px] sm:relative sm:top-16 
+              md:h-[300px] md:w-[350px] md:top-0 
+              lg:h-[600px] lg:w-full  lg: lg:top-10 bg-gray-300 justify-betwee text-justify flex-col  lg:flex-row">
+  {/* Mission Content */}
+  <div className=" sm:w-[300px] sm:h-[150px] md:w-[350px] md:h-[300 lg:w-[920px]  lg:h-[500px] flex justify-center items-center flex-col  relative left-7   lg:left-20">       
+    <h3 className="text-center mt-4 font-custom text-green-700  text-3xl md:text-lg lg:text-5xl hidden sm:block">
+      Our Mission
+    </h3>
+    <p className="mt-4  text-justify text-black  font-light  leading-7 sm:text-[12px] md:text-sm lg:text-lg xl:text-2xl lg:px-6  sm:flex-col hidden sm:block  ">
+    Our vision is to create a greener, healthier world where plants are an essential part
+     of everyday life. We aim to make greenery universally accessible and affordable, 
+     ensuring everyone can enjoy its benefits, regardless of location or budget.We believe 
+     in the power of plants to enrich environments, improve well being, and foster harmony
+      between people and nature. By promoting sustainable living and empowering communities,
+       we strive to make greenery a natural part of homes, workplaces, and public spaces.Our
+        mission is to build a thriving future where plants flourish everywhere, contributing
+         to a healthier planet and a sustainable way of life for generations to come.
+    </p>
+    <VisionSection/>
+  </div>
+  
+  {/* Placeholder Div */}
+  <div className="h-[300px] w-[230px]  lg:h-full lg:w-[500px]   bg-gradient-to-r bg-gray1 z-10 relative left-10 lg:left-0 md:left-10"
+  style={{
+    backgroundImage:`url(${our})`,
+    backgroundRepeat:"no-repeat",
+    backgroundSize:"cover"
+  }}>
+   <div className="absolute h-full inset-0 bg-black bg-opacity-70  "></div>
+  <img src={mission} alt="" className="h-[250px] w-[200px] lg:h-[500px] lg:w-[400px] mt-7 relative right-20 lg:mt-16 lg:right-28"  />
+  </div>
 </div>
 
 
@@ -153,7 +175,7 @@ function Aboutme() {
               Flora Flow isn’t just a marketplace; it’s a community of plant lovers, environmental enthusiasts, and sustainable living advocates. By choosing Flora Flow, you’re enriching your life with the beauty of plants while contributing to a global effort to create a greener, more sustainable future.
             </p>
           </div>
-
+   
         </div>
         {/* Call to Action */}
           <h2 className="text-2xl md:text-3xl font-bold text-green-700 sm:mt-10   lg:ml-52 lg:mt-10 md:mt-10">

@@ -22,6 +22,7 @@ export default {
         yellow: {
           500: '#f59e0b', // Example color
         },
+        gray1:"#dcdcdc",
       },
       fontFamily: {
         sans: ['Roboto', 'Arial', 'sans-serif'], // Custom sans-serif font
