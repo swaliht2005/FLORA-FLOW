@@ -8,7 +8,7 @@ const VisionSection = () => {
   };
 
   return (
-    <div className="mt-4 text-justify text-black font-light leading-7 sm:text-[12px] md:text-sm p-10 relative right-8 lg:hidden xl:text-2xl lg:px-6 sm:flex-col">
+    <div className="mt-4 text-justify text-black font-light leading-7 sm:text-[12px] md:text-sm p-10 relative right-8  lg:hidden xl:text-2xl lg:px-6 sm:flex-col  md:hidden ">
          <h3 className="text-center mt-4 font-custom text-green-700  text-3xl md:text-lg lg:text-5xl">
         Our Mission
         </h3>

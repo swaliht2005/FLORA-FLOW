@@ -7,6 +7,7 @@ import Navebar from "../Combonents/Navebar";
 import ThumbnailUploader from "./ThumbnailUploader";
 import addplants from "/src/assets/images/addplants.jpg";
 import plantscare from "../assets/images/planscare.jpg";
+import Footer from "../Combonents/Footer";
 
 function Addproduct() {
   const initialState = {
@@ -142,8 +143,8 @@ function Addproduct() {
             Every plant you grow is a step towards a greener tomorrow. Add a plant today and watch life flourish!
           </h3>
         </div>
-
       </div>
+      <Footer/>
     </div>
   );
 }

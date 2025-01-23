@@ -8,6 +8,7 @@ import HomePagecarts from './HomePagecarts';
 import HomeBanner from './HomeBanner';
 
 import Album from './Album';
+import Footer from '../Combonents/Footer';
 
 function HomePage() {
  
@@ -27,7 +28,7 @@ function HomePage() {
     <HomePagecarts />
     </div>
     {/* Footer */}
-   
+   <Footer/>
   </div>
 );
 }
