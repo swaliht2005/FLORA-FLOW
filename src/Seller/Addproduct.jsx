@@ -7,7 +7,7 @@ import Navebar from "../Combonents/Navebar";
 import ThumbnailUploader from "./ThumbnailUploader";
 import addplants from "/src/assets/images/addplants.jpg";
 import plantscare from "../assets/images/planscare.jpg";
-import Footer from "../Combonents/Footer";
+import Footer2 from "../Combonents/Footer2";
 
 function Addproduct() {
   const initialState = {
@@ -144,7 +144,7 @@ function Addproduct() {
           </h3>
         </div>
       </div>
-      <Footer/>
+      <Footer2/>
     </div>
   );
 }

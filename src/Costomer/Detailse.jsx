@@ -6,6 +6,7 @@ import Navebar from "../Combonents/Navebar";
 import { Link } from "react-router-dom";
 import details from '../assets/images/details.jpg'
 import { useState } from "react";
+import Footer2 from "../Combonents/Footer2";
 
 function Detailse() {
   const location = useLocation();
@@ -28,7 +29,7 @@ function Detailse() {
       backgroundPosition: "center",
     }}>
       {/* Navbar */}
-      <Navebar id="fixed z-20" />
+      <Navebar id="fixed z-20"/>
 
       {/* Product Card */}
       <div className="flex items-center justify-center mt-8 px-4 lg:mt-12 lg:py-14 overflow-hidden">
@@ -91,9 +92,16 @@ function Detailse() {
 
                 {/* Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 w-full">
+                <Link to={'/addtocart'} key={cart.id} state={{ cart }}>
+              
                   <button className="flex-1 bg-green-500 text-white py-2 rounded hover:bg-green-600 transition duration-300">
                     Add to Cart
                   </button>
+             
+                  </Link>
+
+               
+                         
                   <Link
                     to="/chatting"
                     className="flex-1 text-center bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition duration-300"
@@ -108,6 +116,7 @@ function Detailse() {
           <p className="text-gray-600">No details available</p>
         )}
       </div>
+      <Footer2/>
     </div>
   );
 }

@@ -25,6 +25,8 @@ import Crassulaovata from '../assets/images/Crassula ovata.png'
 // import productcarts from '../assets/images/productcarts.jpg'
 // import productcarts from '../assets/images/WhatsApp Image 2025-01-15 at 12.09.01_08f1387a.jpg'
 import Navebar from '../Combonents/Navebar';
+import Footer2 from '../Combonents/Footer2';
+import Button from '../Combonents/Button';
 function HomePagecarts() {
     const carts = [
        
@@ -110,8 +112,8 @@ function HomePagecarts() {
         <Navebar id="fixed z-20"/>
     <div className=" grid grid-cols-1  sm:grid-cols-2  rounded-[4px]  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-6 relative top-28 pb-40">
   {carts.map((cart) => (
-    <Link to={`/details`} key={cart.id} state={{ cart }}>
-      <div className="h-[400px] w-[250px] lg:h-[460px] ml-10  lg:w-[350px] bg-white p-4 rounded shadow hover:shadow-lg transition flex flex-col justify-between ">
+    <Link to={''} key={cart.id} state={{ cart }}>
+      <div className="h-[500px] w-[250px] lg:h-[500px] ml-10  lg:w-[350px] bg-white p-4 rounded shadow hover:shadow-lg transition flex flex-col justify-between ">
         <button className='h-6 w-6'>
           <Link to={'/favorite'}>
             <img src={Faverate} alt="Favorite" />
@@ -129,12 +131,17 @@ function HomePagecarts() {
         <div className="relative left-[10px] bottom-[5px]">
           <h2 className="text-gray-600">Planting Day: {cart.plantingDay}</h2>
           <h2 className="text-gray-600">Height: {cart.Height}</h2>
+         
           <h1><b className='text-green-600'>₹ {cart.price} </b></h1>
+          <Link to={`/details`} key={cart.id} state={{ cart }}>
+          <button className="shop-item-button bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600">Add to Cart</button>
+        </Link>
         </div>
       </div>
     </Link>
   ))}
 </div>
+<Footer2 />
 </div>
   )
 }

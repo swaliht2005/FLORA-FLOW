@@ -71,7 +71,7 @@ function Aboutme() {
     <h3 className="text-center mt-4 font-custom text-green-700  text-3xl md:text-2xl lg:text-5xl hidden sm:block  ">
       Our Mission
     </h3>
-    <p className="mt-4  text-justify text-black  font-light  leading-7 sm:text-[12px] md:text-sm lg:text-lg xl:text-2xl lg:px-6  sm:flex-col hidden sm:block   " >
+    <p className="mt-4  text-justify text-black  font-serif  leading-7 sm:text-[12px] md:text-sm lg:text-lg xl:text-2xl lg:px-6  sm:flex-col hidden sm:block   " >
     Our vision is to create a greener, healthier world where plants are an essential part
      of everyday life. We aim to make greenery universally accessible and affordable, 
      ensuring everyone can enjoy its benefits, regardless of location or budget.We believe 

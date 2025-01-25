@@ -8,7 +8,7 @@ import Faverate from '../assets/images/favorites.png'
 import Calathea from '../assets/images/Calathea.jpg'
 import Dracaena from '../assets/images/Dracaena.jpg'
 import Navebar from '../Combonents/Navebar';
-import Footer from '../Combonents/Footer';
+import Footer2 from '../Combonents/Footer2';
 function Favorite() {
     const carts = [
        
@@ -58,7 +58,7 @@ function Favorite() {
     </Link>
   ))}
 </div>
-<Footer/>
+<Footer2/>
 </div>
   )
 }

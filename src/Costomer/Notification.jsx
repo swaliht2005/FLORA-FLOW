@@ -2,7 +2,7 @@ import React from 'react'
 import Navebar from '../Combonents/Navebar'
 import notification from '../assets/images/notification.jpg'
 import Notifications from './Notifications'
-import Footer from '../Combonents/Footer'
+import Footer2 from '../Combonents/Footer2'
 function Notification() {
   return (
     <div className="h-screen w-screen  "
@@ -21,7 +21,7 @@ function Notification() {
                <Notifications/>
            
         </div>
-        <Footer/>
+        <Footer2/>
   </div>
   )
 }

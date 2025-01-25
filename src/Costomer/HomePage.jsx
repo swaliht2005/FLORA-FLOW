@@ -25,7 +25,7 @@ function HomePage() {
       <Album/>
    <div className="h-auto  lg:bottom-96  sm:bottom-0">
     
-    <HomePagecarts />
+    <HomePagecarts showDiv={false} />
     </div>
     {/* Footer */}
    <Footer/>

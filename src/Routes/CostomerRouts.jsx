@@ -5,6 +5,7 @@ import Chating from '../Costomer/Chating';
 import Profile from '../Costomer/Profile';
 import Favorite from '../Costomer/Favorite';
 import Notification from '../Costomer/Notification';
+import AddToCartPage from '../Costomer/AddToCartPage';
 
 function CustomerRoutes() {
   return (
@@ -14,6 +15,7 @@ function CustomerRoutes() {
       <Route path='/profile' element={<Profile/>}/>
       <Route path='/favorite' element={<Favorite/>}/>
       <Route path='/notification'element={<Notification/>}/>
+      <Route path='/addtocart'element={<AddToCartPage/>}/>
     </Routes>
   );
 }
