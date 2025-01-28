@@ -6,6 +6,7 @@ import Profile from '../Costomer/Profile';
 import Favorite from '../Costomer/Favorite';
 import Notification from '../Costomer/Notification';
 import AddToCartPage from '../Costomer/AddToCartPage';
+import BuyNow from '../Costomer/BuyNow';
 
 function CustomerRoutes() {
   return (
@@ -16,6 +17,7 @@ function CustomerRoutes() {
       <Route path='/favorite' element={<Favorite/>}/>
       <Route path='/notification'element={<Notification/>}/>
       <Route path='/addtocart'element={<AddToCartPage/>}/>
+      <Route path='/buynow'element={<BuyNow/>}/>
     </Routes>
   );
 }

@@ -12,6 +12,9 @@ import join from '../assets/images/jointhegreenrevelution.jpg'
 import mission from '../assets/images/mission.jpg'
 import our from '../assets/images/our.jpg'
 import VisionSection from "./VisionSection";
+// import TestimonialCard from "./TestimonialCard";
+import forcosto from '../assets/images/pexels-shvetsa-5029818.jpg'
+import greener from '../assets/images/pexels-shvetsa-5029776.jpg'
 function Aboutme() {
   return (
     <div className="max-w-full w-full mx-auto  h-full  bg-gray-200 shadow-lg rounded-lg">
@@ -39,16 +42,24 @@ function Aboutme() {
       {/* Content Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6 space-y-8 ">
         {/* About Paragraph */}
-          <div className="w-full h-full border sm:flex sm:flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-8 sm:text-justify">
-          <p className="text-gray-700 leading-7 sm:text-sm md:text-lg lg:text-2xl font-serif flex-1 sm:text-left md:text-center lg:text-center">
-          Welcome to Flora Flow, a platform dedicated to bringing nature closer
-          to you while promoting sustainability and green living. At Flora
-          Flow, we believe that plants are more than just decorative
-          elements they are a source of life, beauty, and well being. Whether
-          you're a seasoned gardener or someone looking to add a touch of green
-          to your home or workspace, Flora Flow is here to make it easy and
-          enjoyable for everyone.
-        </p>
+      
+        <div className="w-full h-full border sm:flex sm:flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-8 sm:text-justify">
+  <div className="w-[1100px] h-full border sm:flex sm:flex-col items-center space-y-4 lg:space-y-0 lg:space-x-8 sm:text-justify">
+    <h2 className="text-gray-700 leading-7 font-serif sm:text-[12px] md:text-sm lg:text-lg xl:text-2xl lg:px-6 sm:flex-col hidden sm:block 
+                  font-bold text-green-600 uppercase tracking-wide text-center py-4">
+      Green Your Space, Green Your Life
+    </h2>
+    <p className="text-gray-700 leading-7 sm:text-sm md:text-lg lg:text-2xl font-serif flex-1 sm:text-left md:text-center lg:text-center">
+      Welcome to Flora Flow, a platform dedicated to bringing nature closer
+      to you while promoting sustainability and green living. At Flora
+      Flow, we believe that plants are more than just decorative
+      elements  they are a source of life, beauty, and well-being. 
+      Whether you're a seasoned gardener or someone looking to add a touch 
+      of green to your home or workspace, Flora Flow is here to make it 
+      easy and enjoyable for everyone.
+    </p>
+  </div>
+
 
             <div className="h-[250px]  md:h-[300px] lg:h-[500px] w-[150px] relative left-10 lg:left-0 sm:w-[300px] md:w-[200px] lg:w-[300px] md:py-1 bg-gray-400 rounded-lg flex items-center justify-center z-10">
                 <img
@@ -71,7 +82,7 @@ function Aboutme() {
     <h3 className="text-center mt-4 font-custom text-green-700  text-3xl md:text-2xl lg:text-5xl hidden sm:block  ">
       Our Mission
     </h3>
-    <p className="mt-4  text-justify text-black  font-serif  leading-7 sm:text-[12px] md:text-sm lg:text-lg xl:text-2xl lg:px-6  sm:flex-col hidden sm:block   " >
+    <p className="mt-4  text-justify text-gray-700 leading-7 font-serif   sm:text-[12px] md:text-sm lg:text-lg xl:text-2xl lg:px-6  sm:flex-col hidden sm:block   " >
     Our vision is to create a greener, healthier world where plants are an essential part
      of everyday life. We aim to make greenery universally accessible and affordable, 
      ensuring everyone can enjoy its benefits, regardless of location or budget.We believe 
@@ -99,14 +110,14 @@ function Aboutme() {
 
 
         {/* What We Offer */}
-        <div className="mt-12 px-4">
+        <div className="mt-12 px-4 ">
   <h2 className="text-2xl md:text-4xl font-bold text-green-700 text-center">
     What We Offer
   </h2>
   <div className="flex flex-wrap justify-center lg:gap-10  md:gap-20 mt-8">
     {/* For Customers */}
     <div
-      className="relative w-full sm:w-1/2  md:h-[500px]  md:w-[280px]   lg:w-[730px] shadow-cyan-500/50  h-80 sm:h-96 rounded-lg shadow-lg hover:shadow-xl bg-cover bg-center group"
+      className="relative w-full sm:w-1/2  md:h-[500px]  md:w-[280px]   lg:w-[500px] shadow-cyan-500/50  h-80 sm:h-96 rounded-lg shadow-lg hover:shadow-xl bg-cover bg-center group"
       style={{
         backgroundImage: `url(${forcostomer})`,
         backgroundPosition: "center",
@@ -126,7 +137,7 @@ function Aboutme() {
 
     {/* For Sellers */}
     <div
-      className="relative w-full sm:w-1/2 lg:w-[730px] md:h-[500px]  md:w-[280px] shadow-cyan-500/50  h-80 sm:h-96 rounded-lg shadow-lg hover:shadow-xl bg-cover bg-center group"
+      className="relative w-full sm:w-1/2 lg:w-[500px] lg:h-[500px] md:h-[500px]   md:w-[280px] shadow-cyan-500/50  h-80 sm:h-96 rounded-lg shadow-lg hover:shadow-xl bg-cover bg-center group"
       style={{
         backgroundImage: `url(${forsellerce})`,
       }}
@@ -142,17 +153,34 @@ function Aboutme() {
         For Sellers:
       </h3>
     </div>
+    {/* <TestimonialCard/> */}
+    <div
+      className="relative w-full sm:w-1/2  md:h-[500px]  md:w-[280px]   lg:w-[500px] shadow-cyan-500/50  h-80 sm:h-96 rounded-lg shadow-lg hover:shadow-xl bg-cover bg-center group"
+      style={{
+        backgroundImage: `url(${forcosto})`,
+        backgroundPosition: "center",
+      }}
+    >
+       <div className="absolute inset-0 bg-green-700 bg-opacity-50 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded">
+        <p className="text-sm sm:text-base md:text-lg text-gray-100 text-center px-4 leading-6 sm:leading-7 group-hover:text-white group-hover:rounded-md group-hover:p-4 transition-all">
+        Flora Flow is committed to promoting sustainability. By supporting
+          local sellers and making greenery accessible to everyone, we’re
+          creating a healthier planet for future generations.
+        </p>
+        
+      </div>
+     </div>
   </div>
 </div>
 
-      <div className="flex flex-col lg:flex-row lg:justify-center md:flex-row  lg:p-20 items-center">
+<div className="flex flex-col lg:flex-row w-full items-center lg:justify-center">
   {/* Why Choose Flora Flow */}
-  <div className="w-full px-6 lg:w-1/2">
+  <div className="w-full px-6 lg:w-1/3">
     <h2 className="text-2xl lg:text-4xl md:text-2xl font-bold text-green-700 mt-10 text-center lg:text-left">
       Why Choose Flora Flow?
     </h2>
     <div
-      className="h-[400px] w-full mt-6  lg:h-[400px] lg:w-full md:mt-10 border md:h-[500px]  md:w-[280px] p-6 rounded-lg shadow-lg hover:shadow-xl shadow-cyan-500/50 relative group mx-auto lg:mx-0"
+      className="h-80 lg:h-[400px] w-full mt-6 border p-6 rounded-lg shadow-lg hover:shadow-xl shadow-cyan-500/50 relative group mx-auto lg:mx-0"
       style={{
         backgroundImage: `url(${choice})`,
         backgroundSize: "cover",
@@ -160,7 +188,7 @@ function Aboutme() {
       }}
     >
       <div className="absolute inset-0 bg-green-700 bg-opacity-50 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded">
-        <p className="text-gray-100 leading-7 px-4 text-center group-hover:text-white group-hover:rounded-md group-hover:p-4 transition-all">
+        <p className="text-gray-100 text-center px-4 leading-7 group-hover:text-white group-hover:rounded-md group-hover:p-4 transition-all">
           Flora Flow isn’t just a marketplace; it’s a community of plant lovers,
           environmental enthusiasts, and sustainable living advocates. By
           choosing Flora Flow, you’re enriching your life with the beauty of
@@ -172,34 +200,57 @@ function Aboutme() {
   </div>
 
   {/* Join the Green Revolution */}
-  <div className="w-full px-4 sm:px-2 lg:w-1/2   ">
-  <h2 className="text-xl sm:text-2xl lg:text-4xl md:text-2xl font-bold text-green-700 mt-6 sm:mt-8 lg:mt-10 text-center lg:text-left">
-    Join the Green Revolution
-  </h2>
-  <div
-    className="h-80  w-full   lg:h-[400px] md:h-[500px]  md:w-[280px] lg:w-full mt-4 sm:mt-6 md:mt-8 lg:mt-10 border p-4 sm:p-5 md:p-6 rounded-lg shadow-lg hover:shadow-xl shadow-cyan-500/50 relative group mx-auto lg:mx-0"
-    style={{
-      backgroundImage: `url(${join})`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-    }}
-  >
-    <div className="absolute inset-0 bg-green-700 bg-opacity-50 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded">
-      <p className="text-sm sm:text-base md:text-lg text-gray-100 leading-6 sm:leading-7 px-2 sm:px-4 text-center group-hover:text-white group-hover:rounded-md group-hover:p-4 transition-all">
-        Whether you're looking to beautify your surroundings, support
-        small-scale sellers, or contribute to environmental well-being, Flora
-        Flow is your trusted partner. Let’s work together to make greenery an
-        essential part of our lives and create a thriving, sustainable
-        community.
-      </p>
-      <p className="text-xs sm:text-sm md:text-base text-green-700 font-semibold mt-2 sm:mt-4">
-        Discover Flora Flow today. Cultivate green, inspire change.
-      </p>
+  <div className="w-full px-6 lg:w-1/3 mt-8 lg:mt-0">
+    <h2 className="text-2xl lg:text-4xl md:text-2xl mt-9 font-bold text-green-700 text-center lg:text-left">
+      Join the Green Revolution
+    </h2>
+    <div
+      className="h-80 lg:h-[400px] w-full mt-6 border p-6 rounded-lg shadow-lg hover:shadow-xl shadow-cyan-500/50 relative group mx-auto lg:mx-0"
+      style={{
+        backgroundImage: `url(${join})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="absolute inset-0 bg-green-700 bg-opacity-50 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded">
+        <p className="text-sm sm:text-base md:text-lg text-gray-100 text-center px-4 leading-6 sm:leading-7 group-hover:text-white group-hover:rounded-md group-hover:p-4 transition-all">
+          Whether you're looking to beautify your surroundings, support
+          small-scale sellers, or contribute to environmental well-being, Flora
+          Flow is your trusted partner. Let’s work together to make greenery an
+          essential part of our lives and create a thriving, sustainable
+          community.
+        </p>
+        <p className="text-xs sm:text-sm md:text-base text-green-700 font-semibold mt-2 sm:mt-4">
+          Discover Flora Flow today. Cultivate green, inspire change.
+        </p>
+      </div>
     </div>
+  </div>
+
+  {/* Additional Image (Optional Section) */}
+  <div className="w-full lg:w-1/3 px-6   lg:mt-0">
+   
+     <div
+      className="relative w-full sm:w-1/2  md:h-[500px]  md:w-[280px]   lg:w-[500px]  lg:h-[400px] mt-20 shadow-cyan-500/50  h-80 sm:h-96 rounded-lg shadow-lg hover:shadow-xl bg-cover bg-center group"
+      style={{
+        backgroundImage: `url(${greener})`,
+        backgroundPosition: "center",
+      }}
+    >
+     <div className="absolute inset-0 bg-green-700 bg-opacity-50 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded">
+        <p className="text-sm sm:text-base md:text-lg text-gray-100 text-center px-4 leading-6 sm:leading-7 group-hover:text-white group-hover:rounded-md group-hover:p-4 transition-all">
+        Imagine a world where every home has a touch of green, 
+                where communities thrive through sustainable practices, 
+                and where nature flourishes. 
+                Flora Flow is making this vision a reality. 
+                Join us in creating a greener, healthier planet.
+        </p>
+       
+      </div>
+      </div>
   </div>
 </div>
 
-</div>
 
   </div>
 

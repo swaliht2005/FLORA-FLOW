@@ -1,7 +1,7 @@
 
 
 import React, { useState } from "react";
-import Addproductimg from "../assets/images/Addproductimg.png";
+import Addproductimg from "../assets/images/philodendroncongo.jpg";
 
 const ThumbnailUploader = () => {
   const [image, setImage] = useState(null);

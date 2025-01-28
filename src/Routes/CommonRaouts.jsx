@@ -5,7 +5,9 @@ import LandingPage from '../Login&Signup/LandingPage';
 import SignUp from '../Login&Signup/SignUP'; 
 import Login from '../Login&Signup/Login'; 
 import HomePage from '../Costomer/HomePage';
-import HomePagecarts from '../Costomer/HomePagecarts';
+
+import Cards from '../Costomer/Cards';
+import Shopmore from '../Costomer/Shopmore';
 
 function CommonRaouts() {
   return (
@@ -14,7 +16,8 @@ function CommonRaouts() {
       <Route path="/signUp" element={<SignUp />} />
       <Route path="/login" element={<Login/>} />
       <Route path="/homePage"  element = {<HomePage/>} />
-      <Route path='/homePagecarts' element={<HomePagecarts/>}/>
+      <Route path="/shopemore"  element = {<Shopmore/>} />
+      <Route path='/homePagecarts' element={<Cards/>}/>
     </Routes>
   );
 }

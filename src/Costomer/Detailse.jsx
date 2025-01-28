@@ -1,6 +1,3 @@
-
-
-
 import { useLocation } from "react-router-dom";
 import Navebar from "../Combonents/Navebar";
 import { Link } from "react-router-dom";
@@ -23,38 +20,38 @@ function Detailse() {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-100"
-    style={{
-      backgroundImage:`url(${details})`,
-      backgroundSize:"cover",
-      backgroundPosition: "center",
-    }}>
+      style={{
+        backgroundImage:`url(${details})`,
+        backgroundSize:"cover",
+        backgroundPosition: "center",
+      }}>
       {/* Navbar */}
       <Navebar id="fixed z-20"/>
-
+      
       {/* Product Card */}
       <div className="flex items-center justify-center mt-8 px-4 lg:mt-12 lg:py-14 overflow-hidden">
         {cart ? (
-          <div className="w-full  h-[650px] lg:h-full lg:w-full max-w-4xl bg-white  rounded-lg shadow-md p-6 lg:p-12 flex flex-wrap lg:flex-nowrap items-center gap-8 sm:pb-16 mt-20 sm:mt-0">
+          <div className="w-full h-full lg:w-full max-w-4xl bg-white rounded-lg shadow-md p-3 lg:p-12 flex flex-col lg:flex-row items-center gap-8 lg:gap-12 mt-20 sm:mt-0">
             {/* Image Section */}
-            <div className="w-full lg:w-1/2  flex flex-col items-center">
+            <div className="w-full lg:w-1/2 flex flex-col items-center">
               <img
                 src={cart.url}
                 alt={cart.PlantName || "Plant Image"}
-                className="rounded h-auto max-w-full lg:max-w-md object-cover shadow-sm  sm:pb-0"
+                className="rounded h-auto max-w-full lg:max-w-md object-cover shadow-sm sm:pb-0"
               />
-              <Link to={'/homePagecarts'}>
-              <button
-                type="button"
-                className="mt-4 text-white  bg-gradient-to-br from-pin-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center w-full sm:w-auto"
-              >
-                SHOP MORE
-              </button>
+              <Link to={'/shopemore'}>
+                <button
+                  type="button"
+                  className="mt-4 text-white bg-gradient-to-br from-pin-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center w-full sm:w-auto"
+                >
+                  SHOP MORE
+                </button>
               </Link>
             </div>
 
             {/* Details Section */}
-            <div className="w-full lg:w-1/2 text-center lg:text-left relative bottom-20 lg:bottom-0">
-              <h1 className="font-semibold text-2xl sm:text-3xl lg:text-4xl  text-gray-800">
+            <div className="w-full lg:w-1/2 text-center lg:text-left">
+              <h1 className="font-semibold text-2xl sm:text-3xl lg:text-4xl text-gray-800">
                 {cart.PlantName || "Unknown Plant"}
               </h1>
               <p className="text-gray-600 mt-4">
@@ -70,7 +67,7 @@ function Detailse() {
               {/* Actions */}
               <div className="flex flex-col gap-6 mt-8">
                 {/* Quantity Selector */}
-                <div className="flex justify-center sm:justify-start items-center gap-4">
+                <div className="flex justify-center sm:justify-start items-center md:justify-center gap-4">
                   <button
                     onClick={decrement}
                     className="bg-green-500 hover:bg-white text-white hover:text-black hover:border-green-500 hover:border-2 font-semibold py-2 px-4 rounded transition duration-400 ease-in-out"
@@ -92,24 +89,25 @@ function Detailse() {
 
                 {/* Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 w-full">
-                <Link to={'/addtocart'} key={cart.id} state={{ cart }}>
-              
-                  <button className="flex-1 bg-green-500 text-white py-2 rounded hover:bg-green-600 transition duration-300">
-                    Add to Cart
-                  </button>
-             
+                  <Link to={'/addtocart'} key={cart.id} state={{ cart }}>
+                    <button className="flex-1 bg-green-500 text-white py-2 rounded-full lg:w-32 md:w-48 w-full hover:bg-green-600 transition duration-300">
+                      Add to Cart
+                    </button>
                   </Link>
-
-               
-                         
+                  <Link to={'/buynow'} >
+                  <button className="flex-1 bg-gradient-to-r from-pin-500 to-yellow-500 text-white py-2 rounded-full lg:w-28 hover:bg-green-600 transition duration-300">
+                    Buy Now
+                  </button>
+                  </Link>
                   <Link
                     to="/chatting"
-                    className="flex-1 text-center bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition duration-300"
+                    className="flex-1 text-center bg-blue-500 text-white py-2 rounded-full lg:w-28 hover:bg-blue-600 transition duration-300"
                   >
                     Comment
                   </Link>
                 </div>
               </div>
+
             </div>
           </div>
         ) : (

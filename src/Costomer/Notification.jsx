@@ -5,14 +5,7 @@ import Notifications from './Notifications'
 import Footer2 from '../Combonents/Footer2'
 function Notification() {
   return (
-    <div className="h-screen w-screen  "
-   
-      style={{
-        backgroundImage: `url(${notification})`,
-        backgroundAttachment: "fixed",
-        backgroundSize:"contain",
-    }}
-    >
+    <div className="h-screen w-screen  ">
         <div className="h-[100px] w-full ">
         <Navebar id="fixed z-20" />
         </div>

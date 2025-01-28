@@ -40,12 +40,12 @@ function Addproduct() {
   return (
     <div className="relative min-h-screen flex flex-col overflow-hidden bg-gray-200">
       {/* Navbar */}
-      <div className="z-10">
+      <div className="w-full fixed z-40">
         <Navebar />
       </div>
 
       {/* Content */}
-      <div className="flex flex-col lg:flex-row justify-center   items-start gap-10 px-4 sm:px-6 lg:px-20  relative z-10">
+      <div className="flex flex-col lg:flex-row justify-center   items-start gap-10 px-4 sm:px-6 lg:px-20  lg:py-28 py-16 relative z-10">
         {/* Left Section */}
         <div className="w-full lg:w-[500px] lg:h-[680px]  flex-col bg-opacity-25 rounded-md p-2 shadow-2xl hidden sm:block lg:flex">
         <img

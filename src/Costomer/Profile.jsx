@@ -174,7 +174,7 @@ function Profile() {
     className="h-screen w-screen"
     
   >
-    <div className="w-full z-20">
+    <div className="w-full fixed z-20">
         <Navebar/>
       </div>
 

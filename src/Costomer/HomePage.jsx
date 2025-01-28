@@ -3,12 +3,13 @@ import Navebar from '../Combonents/Navebar';
 
 
 
-import HomePagecarts from './HomePagecarts';
+
 
 import HomeBanner from './HomeBanner';
 
 import Album from './Album';
 import Footer from '../Combonents/Footer';
+import Cards from './Cards';
 
 function HomePage() {
  
@@ -25,7 +26,7 @@ function HomePage() {
       <Album/>
    <div className="h-auto  lg:bottom-96  sm:bottom-0">
     
-    <HomePagecarts showDiv={false} />
+    <Cards h="500px" w="100%" />
     </div>
     {/* Footer */}
    <Footer/>

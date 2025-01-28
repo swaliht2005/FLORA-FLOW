@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import Navebar from "../Combonents/Navebar";
 import Footer2 from "../Combonents/Footer2";
-
+import { Link } from "react-router-dom";
 const AddToCartPage = () => {
   const location = useLocation();
 
@@ -92,6 +92,11 @@ const AddToCartPage = () => {
                     >
                       +
                     </button>
+                    <Link to={'/buynow'} >
+                  <button className="flex-1 bg-gradient-to-br from-fuchsia-500 to-rose-500  text-white py-2 lg:rounded-full  relative lg:left-12 rounded  lg:w-28 hover:bg-green-600 transition duration-300 ">
+                  confirm order
+                  </button>
+                  </Link>
                   </div>
                   <p className="font-semibold text-sm sm:text-base">₹{item.price}</p>
                 </div>

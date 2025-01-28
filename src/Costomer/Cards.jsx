@@ -27,7 +27,7 @@ import Crassulaovata from '../assets/images/Crassula ovata.png'
 import Navebar from '../Combonents/Navebar';
 import Footer2 from '../Combonents/Footer2';
 import Button from '../Combonents/Button';
-function HomePagecarts() {
+function Cards() {
     const carts = [
        
         {
@@ -106,10 +106,16 @@ function HomePagecarts() {
         },
         
       ];
+      // const [favorite, setFavorite] = useState(false);
+
+      // const Changecolor = () => {
+      //   setFavorite(!favorite); // Toggle the favorite state
+      // };
+
   return (
     <div className="bg-gray-100  overflow-hidden  ">
        
-        <Navebar id="fixed z-20"/>
+      
     <div className=" grid grid-cols-1  sm:grid-cols-2  rounded-[4px]  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-6 relative top-28 pb-40">
   {carts.map((cart) => (
     <Link to={''} key={cart.id} state={{ cart }}>
@@ -118,6 +124,12 @@ function HomePagecarts() {
           <Link to={'/favorite'}>
             <img src={Faverate} alt="Favorite" />
           </Link>
+            {/* <button
+      onClick={Changecolor}
+      className={`text-5xl relative bottom-5 ${favorite ? "text-red-500" : "text-gray-400"}`}
+    >
+      ♥
+                  </button> */}
         </button>
 
         <div className="flex items-center flex-col  h-[250px] lg:h-[300px]">
@@ -141,9 +153,10 @@ function HomePagecarts() {
     </Link>
   ))}
 </div>
-<Footer2 />
+
+
 </div>
   )
 }
 
-export default HomePagecarts
+export default Cards
